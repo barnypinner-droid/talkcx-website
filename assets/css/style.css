@@ -178,6 +178,8 @@ nav.primary-nav a.active::after {
   cursor: pointer;
 }
 
+.nav-cta-item { display: none; }
+
 @media (max-width: 860px) {
   nav.primary-nav {
     position: absolute;
@@ -190,7 +192,9 @@ nav.primary-nav a.active::after {
   nav.primary-nav.open { display: block; }
   nav.primary-nav ul { flex-direction: column; gap: 18px; }
   .nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
-  .nav-actions .btn-primary-nav-hide { display: none; }
+  .nav-actions .header-cta { display: none; }
+  .nav-cta-item { display: block; margin-top: 6px; }
+  .nav-cta-item .btn { width: 100%; }
 }
 
 /* ---------- Hero ---------- */
