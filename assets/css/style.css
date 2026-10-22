@@ -372,7 +372,7 @@ section { padding: 90px 0; }
 /* ---------- CTA band ---------- */
 .cta-band {
   border-radius: 24px;
-  background: linear-gradient(120deg, rgba(61,20,76,0.9), rgba(233,0,255,0.25));
+  background: #122a5c;
   border: 1px solid var(--card-border);
   padding: 64px 40px;
   text-align: center;
