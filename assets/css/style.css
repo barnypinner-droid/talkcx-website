@@ -37,6 +37,10 @@ body {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, .eyebrow {
+  font-family: "DM Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -100,9 +104,6 @@ h1, .page-hero h1 {
     0 0 26px rgba(233, 0, 255, 0.25),
     0 0 56px rgba(22, 133, 248, 0.18);
 }
-.logo {
-  text-shadow: 0 0 12px rgba(250, 235, 44, 0.35);
-}
 
 /* ---------- Buttons ---------- */
 .btn {
@@ -150,16 +151,13 @@ header.site-header {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-weight: 800;
-  font-size: 1.3rem;
-  letter-spacing: -0.02em;
 }
-.logo .dot {
-  width: 10px; height: 10px; border-radius: 50%;
-  background: var(--neon-yellow);
-  box-shadow: 0 0 12px 3px var(--neon-yellow);
+.logo-img {
+  height: 34px;
+  width: auto;
+  display: block;
 }
+.footer-grid .logo-img { height: 30px; }
 nav.primary-nav ul {
   display: flex;
   gap: 32px;
