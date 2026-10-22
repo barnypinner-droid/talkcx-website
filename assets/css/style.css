@@ -20,7 +20,6 @@
   --text-dimmer: #8e7aa3;
 
   --gradient-brand: linear-gradient(90deg, var(--neon-pink), var(--neon-magenta), var(--neon-blue));
-  --gradient-warm: linear-gradient(90deg, var(--neon-yellow), var(--neon-pink));
   --radius: 14px;
   --max-width: 1180px;
 }
@@ -87,10 +86,7 @@ p { margin: 0 0 1em; color: var(--text-dim); }
 }
 
 .gradient-text {
-  background: var(--gradient-brand);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--neon-pink);
   text-shadow:
     0 0 14px rgba(233, 0, 255, 0.55),
     0 0 32px rgba(245, 39, 137, 0.4),
@@ -120,7 +116,7 @@ h1, .page-hero h1 {
   transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease, color 0.18s ease;
 }
 .btn-primary {
-  background: var(--gradient-brand);
+  background: var(--neon-pink);
   color: #0b0210;
   box-shadow: 0 0 22px rgba(233, 0, 255, 0.35), 0 0 40px rgba(22, 133, 248, 0.2);
 }
@@ -359,8 +355,8 @@ section { padding: 90px 0; }
   border-radius: 999px;
   color: #0b0210;
 }
-.partner-card.polyai .badge { background: var(--gradient-warm); }
-.partner-card.casey .badge { background: linear-gradient(90deg, var(--neon-blue), var(--neon-magenta)); }
+.partner-card.polyai .badge { background: var(--neon-yellow); }
+.partner-card.casey .badge { background: var(--neon-blue); }
 .partner-card h3 { font-size: 1.6rem; }
 .partner-card ul { margin: 10px 0 0; display: flex; flex-direction: column; gap: 10px; }
 .partner-card li { color: var(--text-dim); display: flex; gap: 10px; font-size: 0.95rem; }
