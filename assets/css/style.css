@@ -8,12 +8,11 @@
   --neon-pink: #f52789;
   --neon-magenta: #e900ff;
   --neon-blue: #1685f8;
-  --deep-purple: #3d144c;
 
   /* Derived surface colors */
   --bg: #071633;
-  --bg-elevated: #160a22;
-  --card: #1b0e28;
+  --bg-elevated: #0c1830;
+  --card: #10204a;
   --card-border: rgba(245, 39, 137, 0.25);
   --text: #f6eefc;
   --text-dim: #c4b4d6;
@@ -273,7 +272,7 @@ section { padding: 90px 0; }
 }
 
 .card {
-  background: linear-gradient(160deg, var(--card), rgba(27,14,40,0.4));
+  background: linear-gradient(160deg, var(--card), rgba(16,32,74,0.4));
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
   padding: 30px;
