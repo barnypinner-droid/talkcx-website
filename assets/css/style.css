@@ -162,7 +162,7 @@ header.site-header {
   height: 102px;
   width: auto;
   display: block;
-  animation: neon-flicker 5s infinite;
+  animation: neon-flicker 5s 1;
 }
 .footer-grid .logo-img { height: 90px; }
 

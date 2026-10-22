@@ -112,8 +112,13 @@
     var rect = realLogo.getBoundingClientRect();
     if (!rect.width || !rect.height) return;
 
+    // The real logo only flickers once it has settled at its normal small
+    // size, not while it's hidden behind the big centred clone.
+    realLogo.style.animation = "none";
+
     var clone = realLogo.cloneNode(true);
     clone.removeAttribute("id");
+    clone.style.animation = "none";
     clone.style.position = "fixed";
     clone.style.top = "50%";
     clone.style.left = "50%";
@@ -146,6 +151,11 @@
       clone.removeEventListener("transitionend", handler);
       realLogo.style.visibility = "visible";
       clone.remove();
+
+      // Restart the one-shot flicker now that the logo is at its real size.
+      realLogo.style.animation = "none";
+      void realLogo.offsetWidth; // force reflow
+      realLogo.style.animation = "";
     });
   }
 
