@@ -152,12 +152,25 @@ header.site-header {
   display: flex;
   align-items: center;
 }
-.logo-img {
-  height: 34px;
+.logo-frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding: 0 14px;
+  background: #050109;
+  border: 1px solid rgba(245, 39, 137, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 0 18px rgba(233, 0, 255, 0.12);
+  overflow: hidden;
+}
+.logo-video {
+  height: 28px;
   width: auto;
   display: block;
 }
-.footer-grid .logo-img { height: 30px; }
+.footer-grid .logo-frame { height: 36px; padding: 0 12px; }
+.footer-grid .logo-video { height: 22px; }
 nav.primary-nav ul {
   display: flex;
   gap: 32px;
