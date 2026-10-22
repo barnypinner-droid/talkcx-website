@@ -160,12 +160,12 @@ header.site-header {
   align-items: center;
 }
 .logo-img {
-  height: 34px;
+  height: 51px;
   width: auto;
   display: block;
   animation: neon-flicker 5s infinite;
 }
-.footer-grid .logo-img { height: 30px; }
+.footer-grid .logo-img { height: 45px; }
 
 /* Irregular on/off dips rather than a smooth pulse, to read as a real
    imperfect neon tube rather than a soft breathing animation. */
