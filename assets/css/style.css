@@ -148,25 +148,23 @@ header.site-header {
   display: flex;
   align-items: center;
 }
-.logo-frame {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  padding: 0 14px;
-  background: #050109;
-  border: 1px solid rgba(245, 39, 137, 0.2);
-  border-radius: 10px;
-  box-shadow: 0 0 18px rgba(233, 0, 255, 0.12);
-  overflow: hidden;
-}
-.logo-video {
-  height: 28px;
+.logo-img {
+  height: 34px;
   width: auto;
   display: block;
+  animation: neon-flicker 5s infinite;
 }
-.footer-grid .logo-frame { height: 36px; padding: 0 12px; }
-.footer-grid .logo-video { height: 22px; }
+.footer-grid .logo-img { height: 30px; }
+
+/* Irregular on/off dips rather than a smooth pulse, to read as a real
+   imperfect neon tube rather than a soft breathing animation. */
+@keyframes neon-flicker {
+  0%, 17%, 21%, 24%, 52%, 56%, 100% { opacity: 1; }
+  19%, 22.5%, 23.5%, 54%, 55% { opacity: 0.4; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .logo-img { animation: none; }
+}
 nav.primary-nav ul {
   display: flex;
   gap: 32px;
