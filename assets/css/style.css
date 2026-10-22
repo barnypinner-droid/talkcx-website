@@ -11,7 +11,7 @@
   --deep-purple: #3d144c;
 
   /* Derived surface colors */
-  --bg: #0b0210;
+  --bg: #071633;
   --bg-elevated: #160a22;
   --card: #1b0e28;
   --card-border: rgba(245, 39, 137, 0.25);
@@ -44,12 +44,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  background:
-    radial-gradient(circle at 10% 8%, rgba(233, 0, 255, 0.26), transparent 38%),
-    radial-gradient(circle at 90% 6%, rgba(22, 133, 248, 0.28), transparent 42%),
-    radial-gradient(circle at 78% 88%, rgba(250, 235, 44, 0.16), transparent 36%),
-    radial-gradient(circle at 15% 92%, rgba(245, 39, 137, 0.24), transparent 44%),
-    linear-gradient(180deg, var(--bg) 0%, var(--deep-purple) 160%);
+  background: var(--bg);
 }
 
 img { max-width: 100%; display: block; }
