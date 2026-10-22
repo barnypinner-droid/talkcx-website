@@ -84,6 +84,10 @@ p { margin: 0 0 1em; color: var(--text-dim); }
   background: var(--neon-magenta);
   box-shadow: 0 0 10px 2px var(--neon-magenta);
 }
+/* Per-page/section accent colour, so the eyebrow label isn't pink everywhere */
+.eyebrow.blue { color: var(--neon-blue); }
+.eyebrow.magenta { color: var(--neon-magenta); }
+.eyebrow.yellow { color: var(--neon-yellow); }
 
 .gradient-text {
   color: var(--neon-pink);
@@ -91,6 +95,18 @@ p { margin: 0 0 1em; color: var(--text-dim); }
     0 0 14px rgba(233, 0, 255, 0.55),
     0 0 32px rgba(245, 39, 137, 0.4),
     0 0 64px rgba(22, 133, 248, 0.3);
+}
+.gradient-text.blue {
+  color: var(--neon-blue);
+  text-shadow: 0 0 14px rgba(22, 133, 248, 0.55), 0 0 32px rgba(22, 133, 248, 0.35), 0 0 64px rgba(22, 133, 248, 0.2);
+}
+.gradient-text.magenta {
+  color: var(--neon-magenta);
+  text-shadow: 0 0 14px rgba(233, 0, 255, 0.55), 0 0 32px rgba(233, 0, 255, 0.35), 0 0 64px rgba(233, 0, 255, 0.2);
+}
+.gradient-text.yellow {
+  color: var(--neon-yellow);
+  text-shadow: 0 0 14px rgba(250, 235, 44, 0.55), 0 0 32px rgba(250, 235, 44, 0.35), 0 0 64px rgba(250, 235, 44, 0.2);
 }
 
 /* Neon-tube glow for headline type */
@@ -359,6 +375,8 @@ section { padding: 90px 0; }
 .partner-card ul { margin: 10px 0 0; display: flex; flex-direction: column; gap: 10px; }
 .partner-card li { color: var(--text-dim); display: flex; gap: 10px; font-size: 0.95rem; }
 .partner-card li::before { content: "◆"; color: var(--neon-pink); flex-shrink: 0; }
+.partner-card.polyai li::before { color: var(--neon-yellow); }
+.partner-card.casey li::before { color: var(--neon-blue); }
 
 /* ---------- Table ---------- */
 .service-table {
@@ -378,7 +396,7 @@ section { padding: 90px 0; }
   font-size: 0.75rem;
   letter-spacing: 0.08em;
 }
-.service-table td.fee { color: var(--neon-pink); font-weight: 700; white-space: nowrap; }
+.service-table td.fee { color: var(--neon-magenta); font-weight: 700; white-space: nowrap; }
 
 /* ---------- CTA band ---------- */
 .cta-band {
