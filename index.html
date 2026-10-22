@@ -14,7 +14,7 @@
 
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="index.html" class="logo"><img src="assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" /></a>
+    <a href="index.html" class="logo"><img src="assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" id="hero-intro-logo" /></a>
     <nav class="primary-nav">
       <ul>
         <li><a href="index.html" class="active">Home</a></li>
@@ -35,7 +35,7 @@
 <main>
   <!-- Hero -->
   <section class="hero container">
-    <h1>Conversational AI that actually <span class="gradient-text">answers the call.</span></h1>
+    <h1>Let's talk about <span class="gradient-text">CX!</span></h1>
     <p class="lede">TalkCX is a vendor-neutral CCaaS and conversational AI consultancy for UK mid-market contact centres — from readiness assessment and vendor selection to PolyAI deployment and go-live.</p>
     <div class="hero-actions">
       <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
@@ -163,5 +163,59 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script>
+(function () {
+  var realLogo = document.getElementById("hero-intro-logo");
+  if (!realLogo) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  function runIntro() {
+    var rect = realLogo.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+
+    var clone = realLogo.cloneNode(true);
+    clone.removeAttribute("id");
+    clone.style.position = "fixed";
+    clone.style.top = "50%";
+    clone.style.left = "50%";
+    clone.style.margin = "0";
+    clone.style.zIndex = "9999";
+    clone.style.pointerEvents = "none";
+    clone.style.height = rect.height + "px";
+    clone.style.width = "auto";
+    clone.style.transition =
+      "top 1.1s cubic-bezier(0.65, 0, 0.35, 1), left 1.1s cubic-bezier(0.65, 0, 0.35, 1), transform 1.1s cubic-bezier(0.65, 0, 0.35, 1)";
+
+    var bigHeight = Math.min(window.innerHeight * 0.32, 240);
+    var startScale = bigHeight / rect.height;
+    clone.style.transform = "translate(-50%, -50%) scale(" + startScale + ")";
+
+    realLogo.style.visibility = "hidden";
+    document.body.appendChild(clone);
+
+    // Force layout so the transition below actually animates from this state.
+    clone.getBoundingClientRect();
+
+    setTimeout(function () {
+      clone.style.top = rect.top + rect.height / 2 + "px";
+      clone.style.left = rect.left + rect.width / 2 + "px";
+      clone.style.transform = "translate(-50%, -50%) scale(1)";
+    }, 550);
+
+    clone.addEventListener("transitionend", function handler(e) {
+      if (e.propertyName !== "transform") return;
+      clone.removeEventListener("transitionend", handler);
+      realLogo.style.visibility = "visible";
+      clone.remove();
+    });
+  }
+
+  if (realLogo.complete) {
+    runIntro();
+  } else {
+    realLogo.addEventListener("load", runIntro, { once: true });
+  }
+})();
+</script>
 </body>
 </html>
