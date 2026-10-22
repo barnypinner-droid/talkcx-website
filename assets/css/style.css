@@ -19,7 +19,6 @@
   --text-dim: #c4b4d6;
   --text-dimmer: #8e7aa3;
 
-  --gradient-brand: linear-gradient(90deg, var(--neon-pink), var(--neon-magenta), var(--neon-blue));
   --radius: 14px;
   --max-width: 1180px;
 }
@@ -46,9 +45,10 @@ body::before {
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(circle at 15% 10%, rgba(233, 0, 255, 0.16), transparent 40%),
-    radial-gradient(circle at 85% 0%, rgba(22, 133, 248, 0.18), transparent 45%),
-    radial-gradient(circle at 50% 100%, rgba(245, 39, 137, 0.14), transparent 50%),
+    radial-gradient(circle at 10% 8%, rgba(233, 0, 255, 0.26), transparent 38%),
+    radial-gradient(circle at 90% 6%, rgba(22, 133, 248, 0.28), transparent 42%),
+    radial-gradient(circle at 78% 88%, rgba(250, 235, 44, 0.16), transparent 36%),
+    radial-gradient(circle at 15% 92%, rgba(245, 39, 137, 0.24), transparent 44%),
     linear-gradient(180deg, var(--bg) 0%, var(--deep-purple) 160%);
 }
 
@@ -199,7 +199,7 @@ nav.primary-nav a.active::after {
   position: absolute;
   left: 0; bottom: -4px;
   width: 100%; height: 2px;
-  background: var(--gradient-brand);
+  background: var(--neon-pink);
   border-radius: 2px;
 }
 .nav-actions { display: flex; align-items: center; gap: 14px; }
@@ -322,8 +322,11 @@ section { padding: 90px 0; }
   display: flex; align-items: center; justify-content: center;
   font-size: 1.3rem;
   margin-bottom: 18px;
-  background: var(--gradient-brand);
+  background: var(--neon-pink);
 }
+.card .icon.yellow { background: var(--neon-yellow); }
+.card .icon.magenta { background: var(--neon-magenta); }
+.card .icon.blue { background: var(--neon-blue); }
 .card h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .card p { margin-bottom: 0; color: var(--text-dim); font-size: 0.96rem; }
 .card .tag {
