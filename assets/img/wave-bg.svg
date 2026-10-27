@@ -17,7 +17,7 @@
 
   <rect width="1600" height="900" fill="url(#sky)"/>
 
-  <g stroke="#1685f8" stroke-width="1.8" fill="none" opacity="0.65">
+  <g stroke="#1685f8" stroke-width="2.4" fill="none" opacity="0.9">
     <line x1="800" y1="460" x2="-480.0" y2="900"/>
     <line x1="800" y1="460" x2="-337.8" y2="900"/>
     <line x1="800" y1="460" x2="-195.6" y2="900"/>
