@@ -17,7 +17,7 @@
 
   <rect width="1600" height="900" fill="url(#sky)"/>
 
-  <g stroke="#1685f8" stroke-width="1.4" fill="none" opacity="0.4">
+  <g stroke="#1685f8" stroke-width="1.8" fill="none" opacity="0.65">
     <line x1="800" y1="460" x2="-480.0" y2="900"/>
     <line x1="800" y1="460" x2="-337.8" y2="900"/>
     <line x1="800" y1="460" x2="-195.6" y2="900"/>
@@ -48,10 +48,10 @@
     <line x1="-480.0" y1="900.0" x2="2080.0" y2="900.0"/>
   </g>
 
-  <line x1="-480" y1="460" x2="2080" y2="460" stroke="#e900ff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="-480" y1="460" x2="2080" y2="460" stroke="#e900ff" stroke-width="2" opacity="0.75"/>
 
   <path d="M -60 330 C 280 210, 520 420, 820 300 S 1340 110, 1660 280"
-        fill="none" stroke="url(#laser-stroke)" stroke-width="22" filter="url(#laser-glow)" opacity="0.55"/>
+        fill="none" stroke="url(#laser-stroke)" stroke-width="28" filter="url(#laser-glow)" opacity="0.8"/>
   <path d="M -60 330 C 280 210, 520 420, 820 300 S 1340 110, 1660 280"
-        fill="none" stroke="url(#laser-stroke)" stroke-width="6" opacity="0.95"/>
+        fill="none" stroke="url(#laser-stroke)" stroke-width="7" opacity="1"/>
 </svg>
