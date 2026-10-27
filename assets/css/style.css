@@ -296,6 +296,24 @@ section { padding: 90px 0; }
   letter-spacing: 0.04em;
 }
 
+/* ---------- Insight cards (industry stats) ---------- */
+.insight-card { display: flex; flex-direction: column; }
+.insight-card .insight-icon { font-size: 1.6rem; margin-bottom: 14px; }
+.insight-card .insight-number { font-size: clamp(2.2rem, 5vw, 3rem); margin-bottom: 10px; }
+.insight-card p { margin-bottom: 16px; }
+.insight-source {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-dimmer);
+  transition: color 0.2s ease;
+}
+.insight-source:hover { color: var(--neon-blue); }
+
 /* ---------- Stats ---------- */
 .stats {
   display: grid;
