@@ -138,6 +138,15 @@ h1, .page-hero h1 {
 }
 .btn-ghost:hover { border-color: var(--neon-blue); color: var(--neon-blue); }
 .btn-block { width: 100%; }
+.btn-purple {
+  background: #3d144c;
+  color: var(--text);
+  border-color: transparent;
+}
+.btn-purple:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(61, 20, 76, 0.7), 0 0 40px rgba(233, 0, 255, 0.15);
+}
 
 /* ---------- Header / nav ---------- */
 header.site-header {
