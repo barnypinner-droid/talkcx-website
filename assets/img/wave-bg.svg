@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" />
+    </filter>
+    <filter id="soft-lg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="16" />
+    </filter>
+    <linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1685f8" stop-opacity="0" />
+      <stop offset="18%" stop-color="#1685f8" stop-opacity="0.9" />
+      <stop offset="55%" stop-color="#5fc3ff" stop-opacity="1" />
+      <stop offset="85%" stop-color="#1685f8" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#1685f8" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <g fill="none" stroke-linecap="round">
+    <!-- wide soft glow strands -->
+    <path d="M -100 250 C 300 150, 600 420, 880 300 S 1400 60, 1750 180" stroke="url(#fade)" stroke-width="60" filter="url(#soft-lg)" opacity="0.5" />
+    <path d="M -100 420 C 260 520, 640 260, 900 380 S 1420 520, 1750 400" stroke="url(#fade)" stroke-width="50" filter="url(#soft-lg)" opacity="0.4" />
+    <path d="M -100 620 C 320 560, 560 760, 860 640 S 1380 440, 1750 560" stroke="url(#fade)" stroke-width="44" filter="url(#soft-lg)" opacity="0.35" />
+
+    <!-- mid strands -->
+    <path d="M -100 260 C 300 170, 600 410, 880 300 S 1400 90, 1750 190" stroke="#1685f8" stroke-width="10" filter="url(#soft)" opacity="0.55" />
+    <path d="M -100 430 C 260 510, 640 270, 900 380 S 1420 500, 1750 410" stroke="#1685f8" stroke-width="8" filter="url(#soft)" opacity="0.5" />
+    <path d="M -100 610 C 320 570, 560 750, 860 640 S 1380 460, 1750 570" stroke="#1685f8" stroke-width="7" filter="url(#soft)" opacity="0.45" />
+    <path d="M -100 340 C 280 300, 650 430, 920 330 S 1440 220, 1750 300" stroke="#5fc3ff" stroke-width="5" filter="url(#soft)" opacity="0.4" />
+
+    <!-- bright highlight threads -->
+    <path d="M -100 258 C 300 165, 600 415, 880 300 S 1400 85, 1750 185" stroke="#eaf6ff" stroke-width="2" opacity="0.65" />
+    <path d="M -100 428 C 260 505, 640 265, 900 380 S 1420 505, 1750 405" stroke="#eaf6ff" stroke-width="1.6" opacity="0.55" />
+    <path d="M -100 345 C 280 305, 650 425, 920 330 S 1440 225, 1750 305" stroke="#eaf6ff" stroke-width="1.2" opacity="0.45" />
+
+    <!-- fine particle-like dashes trailing left -->
+    <path d="M -100 250 C 300 150, 600 420, 880 300" stroke="#5fc3ff" stroke-width="1.5" stroke-dasharray="1 10" opacity="0.5" />
+    <path d="M -100 620 C 320 560, 560 760, 860 640" stroke="#5fc3ff" stroke-width="1.5" stroke-dasharray="1 9" opacity="0.4" />
+  </g>
+</svg>
