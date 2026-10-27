@@ -429,6 +429,11 @@ section { padding: 90px 0; }
   box-shadow: 0 0 0 3px rgba(22,133,248,0.2);
 }
 .form-note { font-size: 0.82rem; color: var(--text-dimmer); margin-top: 10px; }
+.form-success { text-align: center; padding: 20px 0; }
+.form-success h3 { color: var(--neon-blue); font-size: 1.3rem; }
+.form-success p { margin-bottom: 0; }
+.form-success a { color: var(--neon-blue); font-weight: 700; }
+.form-success a:hover { text-decoration: underline; }
 .contact-info-item { display: flex; gap: 14px; margin-bottom: 26px; }
 .contact-info-item .ico {
   width: 42px; height: 42px; border-radius: 10px;

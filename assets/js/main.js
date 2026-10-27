@@ -31,20 +31,42 @@ if (revealEls.length) {
   revealEls.forEach((el) => observer.observe(el));
 }
 
-// Contact form -> mailto fallback (static site, no backend)
+// Contact form -> Formspree (static site, no backend of our own)
 const contactForm = document.querySelector("#contact-form");
 if (contactForm) {
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const name = contactForm.querySelector("#name").value.trim();
-    const email = contactForm.querySelector("#email").value.trim();
-    const company = contactForm.querySelector("#company").value.trim();
-    const message = contactForm.querySelector("#message").value.trim();
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  const note = contactForm.querySelector(".form-note");
+  const noteDefault = note ? note.textContent : "";
+  const successEl = document.querySelector("#contact-success");
 
-    const subject = encodeURIComponent(`Enquiry from ${name || "website visitor"}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`
-    );
-    window.location.href = `mailto:info@talkcx.co.uk?subject=${subject}&body=${body}`;
+  contactForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Sending…";
+    if (note) {
+      note.textContent = noteDefault;
+      note.style.color = "";
+    }
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: new FormData(contactForm),
+        headers: { Accept: "application/json" },
+      });
+
+      if (!response.ok) throw new Error("Form submission failed");
+
+      contactForm.hidden = true;
+      if (successEl) successEl.hidden = false;
+    } catch (err) {
+      submitBtn.disabled = false;
+      submitBtn.textContent = "Send message";
+      if (note) {
+        note.textContent =
+          "Something went wrong sending that. Please email us directly at info@talkcx.co.uk instead.";
+        note.style.color = "var(--neon-pink)";
+      }
+    }
   });
 }

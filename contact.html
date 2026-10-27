@@ -43,7 +43,7 @@
   <section class="container">
     <div class="contact-grid reveal">
       <div class="card">
-        <form id="contact-form">
+        <form id="contact-form" action="https://formspree.io/f/maeeoywp" method="POST">
           <div class="form-field">
             <label for="name">Full name</label>
             <input type="text" id="name" name="name" required placeholder="Jane Smith" />
@@ -61,8 +61,12 @@
             <textarea id="message" name="message" rows="5" placeholder="Tell us about your contact centre, current platform, and what you're hoping to achieve with conversational AI."></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-block">Send message</button>
-          <p class="form-note">This form opens your email client to send your enquiry directly to TalkCX. No data is stored on this site.</p>
+          <p class="form-note">Sent straight to the TalkCX team. We reply within one business day.</p>
         </form>
+        <div id="contact-success" class="form-success" hidden>
+          <h3>Thanks, your message is on its way.</h3>
+          <p>We'll come back to you within one business day. If it's urgent, you can also <a href="https://calendly.com/barny-pinner-talkcx/30min" target="_blank" rel="noopener noreferrer">book a call directly</a>.</p>
+        </div>
       </div>
 
       <div>
