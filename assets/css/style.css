@@ -62,21 +62,12 @@ p { margin: 0 0 1em; color: var(--text-dim); }
 .eyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--neon-pink);
   margin-bottom: 14px;
-}
-.eyebrow::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--neon-magenta);
-  box-shadow: 0 0 10px 2px var(--neon-magenta);
 }
 /* Per-page/section accent colour, so the eyebrow label isn't pink everywhere */
 .eyebrow.blue { color: var(--neon-blue); }
