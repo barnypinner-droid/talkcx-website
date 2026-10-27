@@ -45,6 +45,6 @@ if (contactForm) {
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nCompany: ${company}\n\n${message}`
     );
-    window.location.href = `mailto:hello@talkcx.co.uk?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@talkcx.co.uk?subject=${subject}&body=${body}`;
   });
 }

@@ -42,7 +42,7 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which publishes the r
 
 ## To update before going live
 
-- Replace the placeholder email `hello@talkcx.co.uk` with your real contact address (in every `.html` footer/contact section and in `assets/js/main.js`).
+- Contact email is `info@talkcx.co.uk` (in every `.html` footer/contact section and in `assets/js/main.js`) — update everywhere if it changes again.
 - Confirm the Casey Business Solution description on `partners.html` — it's a neutral placeholder pending their own copy/logo.
 - Add real logos for PolyAI and Casey Business Solution in `assets/img/` and swap them in for the text wordmarks on `index.html` and `partners.html`.
 - Add a custom domain via `CNAME` if you don't want the default `github.io` URL.
