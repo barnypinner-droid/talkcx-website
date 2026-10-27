@@ -467,6 +467,13 @@ footer.site-footer {
   border-top: 1px solid rgba(246,238,252,0.08);
   padding-top: 24px;
 }
+.footer-bottom a { color: var(--text-dimmer); text-decoration: underline; text-underline-offset: 2px; }
+.footer-bottom a:hover { color: var(--neon-pink); }
+
+/* ---------- Legal prose pages (privacy, terms) ---------- */
+.legal-content h3 { margin-top: 32px; font-size: 1.1rem; }
+.legal-content h3:first-of-type { margin-top: 8px; }
+.legal-content a { text-decoration: underline; text-underline-offset: 2px; }
 
 /* ---------- Page hero (non-home) ---------- */
 .page-hero { padding: 70px 0 50px; text-align: center; }
