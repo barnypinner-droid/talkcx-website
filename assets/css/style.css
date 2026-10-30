@@ -345,6 +345,8 @@ section { padding: 90px 0; }
   margin-bottom: 4px;
 }
 .stat p { font-size: 0.85rem; color: var(--text-dimmer); text-transform: uppercase; letter-spacing: 0.06em; margin: 0; }
+.stats-experience { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 760px) { .stats-experience { grid-template-columns: 1fr; } }
 
 /* ---------- Partner cards ---------- */
 .partner-card {
