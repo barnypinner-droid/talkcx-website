@@ -315,8 +315,9 @@ section { padding: 90px 0; }
 }
 
 /* ---------- Insight cards (industry stats) ---------- */
-.insight-card { display: flex; flex-direction: column; position: relative; overflow: hidden; isolation: isolate; }
-.insight-card::after {
+.insight-card { display: flex; flex-direction: column; }
+.insight-card, .service-card { position: relative; overflow: hidden; isolation: isolate; }
+.insight-card::after, .service-card::after {
   content: "";
   position: absolute;
   top: -24px;
@@ -334,6 +335,12 @@ section { padding: 90px 0; }
 .insight-bg-efficiency::after { background-image: url("../img/insight-efficiency.svg"); }
 .insight-bg-uk::after { background-image: url("../img/insight-uk.svg"); }
 .insight-bg-handoff::after { background-image: url("../img/insight-handoff.svg"); }
+.service-bg-readiness::after { background-image: url("../img/service-readiness.svg"); }
+.service-bg-vendor::after { background-image: url("../img/service-vendor.svg"); }
+.service-bg-design::after { background-image: url("../img/service-design.svg"); }
+.service-bg-deployment::after { background-image: url("../img/service-deployment.svg"); }
+.service-bg-partner::after { background-image: url("../img/service-partner.svg"); }
+.service-bg-support::after { background-image: url("../img/service-support.svg"); }
 .insight-card .insight-number { font-size: clamp(2.2rem, 5vw, 3rem); margin-bottom: 10px; }
 .insight-card p { margin-bottom: 16px; }
 .insight-source {
