@@ -315,8 +315,25 @@ section { padding: 90px 0; }
 }
 
 /* ---------- Insight cards (industry stats) ---------- */
-.insight-card { display: flex; flex-direction: column; }
-.insight-card .insight-icon { font-size: 1.6rem; margin-bottom: 14px; }
+.insight-card { display: flex; flex-direction: column; position: relative; overflow: hidden; isolation: isolate; }
+.insight-card::after {
+  content: "";
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  width: 190px;
+  height: 190px;
+  background: no-repeat center / contain;
+  opacity: 0.5;
+  z-index: -1;
+  pointer-events: none;
+}
+.insight-bg-automation::after { background-image: url("../img/insight-automation.svg"); }
+.insight-bg-growth::after { background-image: url("../img/insight-growth.svg"); }
+.insight-bg-profit::after { background-image: url("../img/insight-profit.svg"); }
+.insight-bg-efficiency::after { background-image: url("../img/insight-efficiency.svg"); }
+.insight-bg-uk::after { background-image: url("../img/insight-uk.svg"); }
+.insight-bg-handoff::after { background-image: url("../img/insight-handoff.svg"); }
 .insight-card .insight-number { font-size: clamp(2.2rem, 5vw, 3rem); margin-bottom: 10px; }
 .insight-card p { margin-bottom: 16px; }
 .insight-source {
