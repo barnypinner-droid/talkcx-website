@@ -521,3 +521,32 @@ footer.site-footer {
 .mt-80 { margin-top: 80px; }
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* ---------- Contract pages (msa, dpa) ---------- */
+.legal-content .legal-meta { color: var(--text-dimmer); font-size: 0.85rem; }
+.legal-content strong { color: var(--text); }
+.legal-content .fill { background: rgba(250, 235, 44, 0.14); color: var(--neon-yellow); padding: 0 5px; border-radius: 4px; font-weight: 600; }
+.legal-content .legal-toc { margin: 28px 0 8px; padding: 20px 24px; border: 1px solid rgba(246,238,252,0.12); border-radius: var(--radius); }
+.legal-content .legal-toc ol { margin: 0; padding-left: 20px; color: var(--text-dim); columns: 2; column-gap: 32px; font-size: 0.92rem; }
+.legal-content .legal-toc li { margin-bottom: 4px; break-inside: avoid; }
+.legal-content .legal-toc a { color: var(--text-dim); }
+.legal-content .legal-toc a:hover { color: var(--neon-pink); }
+.legal-content h3[id] { scroll-margin-top: 100px; }
+.legal-content .legal-defs { margin: 0 0 1em; }
+.legal-content .legal-defs dt { color: var(--text); font-weight: 700; margin-top: 12px; }
+.legal-content .legal-defs dd { margin: 2px 0 0; color: var(--text-dim); }
+.legal-content .legal-list { color: var(--text-dim); display: flex; flex-direction: column; gap: 8px; margin: 0 0 1em; padding-left: 20px; list-style: disc; }
+.legal-content .legal-table-wrap { overflow-x: auto; margin: 0 0 1em; }
+.legal-content .legal-table td { color: var(--text-dim); vertical-align: top; font-size: 0.9rem; padding: 12px 14px; }
+.legal-content .legal-table td:first-child { color: var(--text); font-weight: 600; }
+@media (max-width: 640px) {
+  .legal-content.card { padding: 28px 20px !important; }
+  .legal-content .legal-toc ol { columns: 1; }
+}
+@media print {
+  .site-header, .site-footer { display: none; }
+  body { background: #fff; }
+  .legal-content.card { background: #fff; border: none; box-shadow: none; padding: 0 !important; }
+  .legal-content p, .legal-content dd, .legal-content li, .legal-content td, .legal-content strong, .legal-content dt, .legal-content h3, .page-hero h1, .page-hero p { color: #000 !important; }
+  .legal-content .fill { color: #000; background: #ff0; }
+}
