@@ -19,5 +19,3 @@ Contact: info@talkcx.co.uk
 
 - [Privacy Policy](https://talkcx.co.uk/privacy.html): How TalkCX collects, uses and protects personal data.
 - [Terms of Use](https://talkcx.co.uk/terms.html): The terms that apply to using the website.
-- [Data Processing Agreement](https://talkcx.co.uk/dpa.html): How TalkCX processes personal data on behalf of its customers.
-- [Master Services Agreement](https://talkcx.co.uk/msa.html): The terms on which TalkCX supplies platform access, tokens, projects and consultancy.
