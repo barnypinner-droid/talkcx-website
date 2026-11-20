@@ -1,0 +1,23 @@
+# TalkCX
+
+> TalkCX is a vendor-neutral CCaaS and conversational AI consultancy, and an official PolyAI reseller partner, helping UK mid-market contact centres deploy AI voice agents that work.
+
+TalkCX is built on 25+ years of contact centre, telecoms and AI experience, from TCS and NewVoiceMedia to DigitalGenius and PolyAI. It offers AI readiness assessments, CCaaS vendor selection and RFP support, conversational AI design, deployment assurance, PolyAI resale and delivery, and ongoing support. Every engagement starts with a fixed-price assessment. The day rate is £1,100 per day, excluding VAT, with final scope and fees confirmed after an initial call.
+
+Contact: info@talkcx.co.uk
+
+## Pages
+
+- [Home](https://talkcx.co.uk/): Overview of TalkCX and the founder's experience.
+- [About](https://talkcx.co.uk/about.html): Background, track record and values.
+- [Services](https://talkcx.co.uk/services.html): The six services, typical scope and indicative fees.
+- [Insights](https://talkcx.co.uk/insights.html): Industry research on conversational AI in customer service, with sources.
+- [Partners](https://talkcx.co.uk/partners.html): PolyAI and Casey Business Solution.
+- [Contact](https://talkcx.co.uk/contact.html): How to get in touch or book a free consultation.
+
+## Optional
+
+- [Privacy Policy](https://talkcx.co.uk/privacy.html): How TalkCX collects, uses and protects personal data.
+- [Terms of Use](https://talkcx.co.uk/terms.html): The terms that apply to using the website.
+- [Data Processing Agreement](https://talkcx.co.uk/dpa.html): How TalkCX processes personal data on behalf of its customers.
+- [Master Services Agreement](https://talkcx.co.uk/msa.html): The terms on which TalkCX supplies platform access, tokens, projects and consultancy.
