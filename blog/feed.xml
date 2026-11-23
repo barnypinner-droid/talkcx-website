@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+  <title>TalkCX Blog</title>
+  <link>https://talkcx.co.uk/blog/</link>
+  <description>Practical notes on voice AI for UK dental practices and small contact centres.</description>
+  <language>en-gb</language>
+  <item>
+    <title>Where do your practice&#x27;s missed calls actually go?</title>
+    <link>https://talkcx.co.uk/blog/dental-practice-missed-calls.html</link>
+    <guid>https://talkcx.co.uk/blog/dental-practice-missed-calls.html</guid>
+    <pubDate>Tue, 24 Nov 2026 08:00:00 +0000</pubDate>
+    <description>Most dental practices know the phones get busy. Fewer know what happens to the calls nobody picks up. A practical look at finding out, and what to do about it.</description>
+  </item>
+</channel>
+</rss>
