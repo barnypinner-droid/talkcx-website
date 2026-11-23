@@ -184,7 +184,7 @@ def build_post(p):
 def build_index(posts):
     url = f"{SITE}/blog/"
     page = head("Blog: TalkCX | Practical notes on voice AI for UK businesses",
-                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK dental practices and small contact centres.",
+                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK contact centres and growing businesses.",
                 url)
     if posts:
         cards = "\n".join(f"""      <a href="{p['slug']}.html" class="card blog-card">
@@ -201,7 +201,7 @@ def build_index(posts):
   <section class="page-hero container">
     <div class="eyebrow blue">Blog</div>
     <h1>Straight talk on <span class="gradient-text blue">voice AI.</span></h1>
-    <p>Practical notes for UK dental practices, small contact centres and anyone wondering what to do about the calls they can't answer. No hype, just what we see working.</p>
+    <p>Practical notes for UK contact centres and anyone wondering what to do about the calls they can't answer. No hype, just what we see working.</p>
   </section>
 
   <section class="container blog-section">
@@ -225,7 +225,7 @@ def build_feed(posts):
 <channel>
   <title>TalkCX Blog</title>
   <link>{SITE}/blog/</link>
-  <description>Practical notes on voice AI for UK dental practices and small contact centres.</description>
+  <description>Practical notes on voice AI and contact centre tech for UK businesses.</description>
   <language>en-gb</language>{items}
 </channel>
 </rss>
