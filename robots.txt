@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /content/
+Disallow: /tools/
+
+Sitemap: https://talkcx.co.uk/sitemap.xml

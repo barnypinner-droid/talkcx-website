@@ -16,6 +16,16 @@ assets/img/          Favicon and other images
 .github/workflows/   GitHub Pages deploy workflow
 ```
 
+## Blog
+
+Posts live in `content/blog/<slug>.html` as an HTML fragment with a metadata block at the top (title, description, date, author). After adding or editing a post, run:
+
+```bash
+python3 tools/build_blog.py
+```
+
+This regenerates `blog/<slug>.html`, `blog/index.html`, `blog/feed.xml` and `sitemap.xml`. Commit the generated files too (there is no build step on deploy). New posts go in on a branch and a pull request; merging to `main` publishes them.
+
 ## Brand palette
 
 | Color | Hex | Usage |
