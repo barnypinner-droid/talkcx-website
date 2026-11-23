@@ -45,6 +45,7 @@ def head(title, description, canonical, extra=""):
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="alternate" type="application/rss+xml" title="TalkCX Blog" href="{SITE}/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:wght@400;500;700;800;900&display=swap" />
 <link rel="stylesheet" href="../assets/css/style.css" />
 {extra}</head>
@@ -52,7 +53,7 @@ def head(title, description, canonical, extra=""):
 
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" /></a>
+    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
     <nav class="primary-nav">
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -78,7 +79,7 @@ FOOT = f"""
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" /></a>
+        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
         <p style="margin-top:14px;max-width:320px;">Vendor-neutral CCaaS &amp; conversational AI consultancy. Official PolyAI reseller partner for the UK mid-market.</p>
       </div>
       <div>
@@ -184,7 +185,7 @@ def build_post(p):
 def build_index(posts):
     url = f"{SITE}/blog/"
     page = head("Blog: TalkCX | Practical notes on voice AI for UK businesses",
-                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK dental practices and small contact centres.",
+                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK contact centres and growing businesses.",
                 url)
     if posts:
         cards = "\n".join(f"""      <a href="{p['slug']}.html" class="card blog-card">
@@ -201,7 +202,7 @@ def build_index(posts):
   <section class="page-hero container">
     <div class="eyebrow blue">Blog</div>
     <h1>Straight talk on <span class="gradient-text blue">voice AI.</span></h1>
-    <p>Practical notes for UK dental practices, small contact centres and anyone wondering what to do about the calls they can't answer. No hype, just what we see working.</p>
+    <p>Practical notes for UK contact centres and anyone wondering what to do about the calls they can't answer. No hype, just what we see working.</p>
   </section>
 
   <section class="container blog-section">
@@ -225,7 +226,7 @@ def build_feed(posts):
 <channel>
   <title>TalkCX Blog</title>
   <link>{SITE}/blog/</link>
-  <description>Practical notes on voice AI for UK dental practices and small contact centres.</description>
+  <description>Practical notes on voice AI and contact centre tech for UK businesses.</description>
   <language>en-gb</language>{items}
 </channel>
 </rss>
