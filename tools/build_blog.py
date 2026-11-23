@@ -45,6 +45,7 @@ def head(title, description, canonical, extra=""):
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="alternate" type="application/rss+xml" title="TalkCX Blog" href="{SITE}/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:wght@400;500;700;800;900&display=swap" />
 <link rel="stylesheet" href="../assets/css/style.css" />
 {extra}</head>
@@ -52,7 +53,7 @@ def head(title, description, canonical, extra=""):
 
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" /></a>
+    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
     <nav class="primary-nav">
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -78,7 +79,7 @@ FOOT = f"""
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" /></a>
+        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
         <p style="margin-top:14px;max-width:320px;">Vendor-neutral CCaaS &amp; conversational AI consultancy. Official PolyAI reseller partner for the UK mid-market.</p>
       </div>
       <div>

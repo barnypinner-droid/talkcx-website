@@ -576,3 +576,16 @@ footer.site-footer {
   .post-body.card { padding: 28px 20px; }
 }
 .blog-section { padding-top: 0 !important; padding-bottom: 64px !important; }
+
+/* ---------- Home: try the AI agent ---------- */
+.try-it {
+  display: inline-flex; flex-direction: column; align-items: center; gap: 4px;
+  margin: -24px auto 48px; padding: 18px 30px;
+  border: 1px solid var(--card-border); border-radius: var(--radius);
+  background: rgba(16, 32, 74, 0.6);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.try-it:hover { border-color: var(--neon-magenta); box-shadow: 0 10px 40px rgba(233, 0, 255, 0.18); }
+.try-it-label { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--neon-yellow); }
+.try-it-text { color: var(--text-dim); }
+.try-it-number { font-family: "DM Sans", sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--text); }
