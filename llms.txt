@@ -11,6 +11,7 @@ Contact: info@talkcx.co.uk
 - [Home](https://talkcx.co.uk/): Overview of TalkCX and the founder's experience.
 - [About](https://talkcx.co.uk/about.html): Background, track record and values.
 - [Services](https://talkcx.co.uk/services.html): The six services, typical scope and indicative fees.
+- [Pricing](https://talkcx.co.uk/pricing.html): Contact Centre AI pricing. Local business packages per site (Out of Hours £100, In-House £200, Connected £250 a month, 24-month contract, free setup) and 3-year plans for small and medium businesses and contact centres from £625 a month. Pay as you go 20p per voice minute, 10p per digital conversation. Prices exclude VAT.
 - [Insights](https://talkcx.co.uk/insights.html): Industry research on conversational AI in customer service, with sources.
 - [Blog](https://talkcx.co.uk/blog/): Practical posts on voice AI, missed calls and contact centre tech for UK contact centres and growing businesses.
 - [Partners](https://talkcx.co.uk/partners.html): PolyAI, Avant Communications and Casey Business Solution.

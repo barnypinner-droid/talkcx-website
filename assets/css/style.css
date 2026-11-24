@@ -595,3 +595,15 @@ footer.site-footer {
 .partner-card.avant li::before { color: var(--neon-magenta); }
 .partner-logo { align-self: flex-start; display: inline-block; background: #fff; border-radius: 10px; padding: 14px 20px; margin: 4px 0 18px; }
 .partner-logo img { height: 34px; width: auto; }
+
+/* Pricing page */
+.price-card { display: flex; flex-direction: column; position: relative; }
+.price-card.featured { border-color: var(--neon-magenta); box-shadow: 0 0 28px rgba(233, 0, 255, 0.25); }
+.price-card .tag { align-self: flex-start; margin: 0 0 12px; }
+.price-card .price { font-family: 'DM Sans', sans-serif; font-size: 2.6rem; font-weight: 800; color: var(--neon-yellow); margin: 6px 0 4px; line-height: 1.1; }
+.price-card .price span { font-size: 0.9rem; font-weight: 500; color: var(--text-dim); margin-left: 6px; }
+.price-card .price-for { margin-bottom: 14px; }
+.price-list { list-style: none; padding: 0; margin: 0; }
+.price-list li { padding: 7px 0 7px 22px; position: relative; color: var(--text-dim); font-size: 0.94rem; border-top: 1px solid rgba(255,255,255,0.06); }
+.price-list li::before { content: "✓"; position: absolute; left: 0; color: var(--neon-blue); font-weight: 700; }
+.faq-item h3 { font-size: 1.05rem; }
