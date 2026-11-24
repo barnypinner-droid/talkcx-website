@@ -70,3 +70,12 @@ if (contactForm) {
     }
   });
 }
+
+// Prefill the contact form when arriving from a pricing "Choose" button
+(() => {
+  const pkg = new URLSearchParams(window.location.search).get("package");
+  const msg = document.querySelector("#contact-form textarea[name='message']");
+  if (pkg && msg && !msg.value) {
+    msg.value = "I'm interested in the " + pkg.slice(0, 60) + " package for my business.";
+  }
+})();
