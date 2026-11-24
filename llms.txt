@@ -1,6 +1,6 @@
 # TalkCX
 
-> TalkCX is a vendor-neutral CCaaS and conversational AI consultancy, and an official PolyAI reseller partner, helping UK mid-market contact centres deploy AI voice agents that work.
+> TalkCX is a vendor-neutral contact centre AI consultancy, and an official PolyAI reseller partner, helping UK mid-market contact centres deploy AI voice agents that work.
 
 TalkCX is built on 25+ years of contact centre experience across five industries, with experience from NiCE, Talkdesk, PolyAI, DigitalGenius and NewVoiceMedia, and clients across banking, travel, retail, telecoms and the public sector. It offers AI readiness assessments, CCaaS vendor selection and RFP support, conversational AI design, deployment assurance, PolyAI resale and delivery, and ongoing support. Every engagement starts with a fixed-price assessment. The day rate is £1,100 per day, excluding VAT, with final scope and fees confirmed after an initial call.
 

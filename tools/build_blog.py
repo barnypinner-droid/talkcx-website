@@ -82,7 +82,7 @@ FOOT = f"""
     <div class="footer-grid">
       <div>
         <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
-        <p style="margin-top:14px;max-width:320px;">Vendor-neutral CCaaS &amp; conversational AI consultancy. Official PolyAI reseller partner for the UK mid-market.</p>
+        <p style="margin-top:14px;max-width:320px;">Vendor-neutral contact centre AI consultancy. Official PolyAI reseller partner for the UK mid-market.</p>
       </div>
       <div>
         <h4>Company</h4>
@@ -187,8 +187,8 @@ def build_post(p):
 
 def build_index(posts):
     url = f"{SITE}/blog/"
-    page = head("Blog: TalkCX | Practical notes on voice AI for UK businesses",
-                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK contact centres and growing businesses.",
+    page = head("Blog: TalkCX | Contact Centre AI and Voice AI for UK Businesses",
+                "Practical, hype-free notes on Contact Centre AI, AI voice agents, AI call centres and missed calls, for UK contact centres and growing businesses.",
                 url)
     if posts:
         cards = "\n".join(f"""      <a href="{p['slug']}.html" class="card blog-card">
