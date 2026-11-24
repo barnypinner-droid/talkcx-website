@@ -22,7 +22,7 @@ import datetime, html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://talkcx.co.uk"
-BOOK = "https://calendar.app.google/to6QeKfcJrDnS5b8A"
+BOOK = "https://calendar.app.google/L8kcdCoEQL7EJN2VA"
 STATIC_PAGES = ["", "about.html", "services.html", "pricing.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
                 "contact.html", "privacy.html", "terms.html"]  # msa/dpa stay unlisted
 
