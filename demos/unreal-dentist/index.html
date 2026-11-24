@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unreal Dentist | Family, NHS &amp; Private Dental Care in Fableton (Demo)</title>
+<meta name="description" content="Unreal Dentist is a fictional dental practice created by TalkCX to demonstrate an AI receptionist. Opening hours, prices, NHS and private care, emergencies and booking.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#17313b;--muted:#53707a;--teal:#0f7c7a;--teal-d:#0a5c5b;--mint:#e6f4f1;--coral:#ef6f5e;--sand:#fbf7f2;--line:#dbe7e4;--r:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"DM Sans",system-ui,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.15;margin:0 0 .5em}
+h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+h2{font-size:clamp(1.7rem,3.2vw,2.4rem)}
+h3{font-size:1.2rem;font-family:"DM Sans",sans-serif;font-weight:700}
+a{color:var(--teal)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.demo-bar{background:var(--ink);color:#fff;font-size:.85rem;text-align:center;padding:8px 16px}
+.demo-bar a{color:#9fe3da}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 22px;max-width:1140px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;font-family:"Fraunces",serif;font-size:1.35rem;color:var(--ink);text-decoration:none}
+.logo svg{width:34px;height:34px}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+.nav ul a{color:var(--ink);text-decoration:none;font-weight:500;font-size:.95rem}
+.nav ul a:hover{color:var(--teal)}
+.btn{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:999px;border:0;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{filter:brightness(.95)}
+.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.phone-link{font-weight:700;color:var(--ink);text-decoration:none;white-space:nowrap}
+@media(max-width:900px){.nav ul{display:none}}
+.hero{background:linear-gradient(135deg,var(--mint),var(--sand));padding:72px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:34em}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}
+.badges{display:flex;gap:10px;flex-wrap:wrap;padding:0;list-style:none;margin:0}
+.badges li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.88rem;font-weight:500}
+.hero-card{background:#fff;border-radius:24px;padding:28px;box-shadow:0 20px 50px rgba(15,124,122,.12)}
+.hero-card h3{margin-top:0}
+.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours td{padding:7px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:700}
+.hours tr.closed td:last-child{color:var(--muted);font-weight:500}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr}}
+section{padding:72px 0}
+section.alt{background:var(--sand)}
+.kicker{color:var(--teal);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.8rem;margin-bottom:8px}
+.intro{max-width:720px;color:var(--muted);margin-bottom:36px}
+.grid{display:grid;gap:20px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.card .ico{width:46px;height:46px;border-radius:12px;background:var(--mint);display:grid;place-items:center;margin-bottom:14px}
+.card .ico svg{width:26px;height:26px;stroke:var(--teal);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card p{margin:.3em 0;color:var(--muted)}
+.price-table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+.price-table th,.price-table td{padding:12px 18px;text-align:left;border-bottom:1px solid var(--line)}
+.price-table th{background:var(--mint);font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+.price-table td:last-child,.price-table th:last-child{text-align:right;white-space:nowrap}
+.price-table tr:last-child td{border-bottom:0}
+.note{font-size:.9rem;color:var(--muted);margin-top:12px}
+.emergency{background:var(--coral);color:#fff;border-radius:24px;padding:40px}
+.emergency a{color:#fff}
+.emergency ul{margin:.5em 0 0;padding-left:1.2em}
+.emergency .grid{margin-top:20px}
+.emergency .box{background:rgba(255,255,255,.14);border-radius:var(--r);padding:20px}
+.team .avatar{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;font-family:"Fraunces",serif;font-size:1.6rem;color:#fff;margin-bottom:12px}
+.team .role{color:var(--teal);font-weight:700;font-size:.92rem;margin:0}
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--muted);margin:.6em 0 0}
+.policy li{margin-bottom:8px}
+.book{background:var(--teal);color:#fff;border-radius:24px;padding:48px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.book .btn{background:#fff;color:var(--teal)}
+.book p{color:#d6efec}
+@media(max-width:800px){.book{grid-template-columns:1fr;padding:32px}}
+footer{background:var(--ink);color:#c9d8dc;padding:48px 0 28px;font-size:.95rem}
+footer a{color:#9fe3da}
+footer .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+footer h3{color:#fff;font-size:1rem}
+.fine{border-top:1px solid #2c4a54;margin-top:32px;padding-top:18px;font-size:.82rem;color:#8fa9b0}
+</style>
+</head>
+<body>
+
+<div class="demo-bar">Demo website. Unreal Dentist is a fictional practice created by <a href="https://talkcx.co.uk">TalkCX</a> to show an AI receptionist in action. Try the chat in the corner.</div>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="#top">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#0f7c7a"/><path d="M13 12c3-2 5 0 7 0s4-2 7 0c3 2 2 7 0 11-1 3-1 7-3 7s-2-5-4-5-2 5-4 5-2-4-3-7c-2-4-3-9 0-11z" fill="#fff"/></svg>
+      Unreal Dentist
+    </a>
+    <ul>
+      <li><a href="#treatments">Treatments</a></li>
+      <li><a href="#prices">Prices</a></li>
+      <li><a href="#nhs">NHS &amp; private</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="#emergency">Emergencies</a></li>
+      <li><a href="#visit">Visit us</a></li>
+    </ul>
+    <a class="phone-link" href="tel:+441632960000">01632 960 000</a>
+    <a class="btn" href="#book">Book now</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Family dentist in Fableton</div>
+      <h1>Calm, honest dentistry for the whole family</h1>
+      <p class="lead">Unreal Dentist is an independent practice on Imaginary Lane offering NHS and private check-ups, hygiene, cosmetic treatment and same-day emergency appointments. Open six days a week, including Saturday mornings.</p>
+      <div class="ctas">
+        <a class="btn" href="#book">Book an appointment</a>
+        <a class="btn ghost" href="#emergency">Dental emergency?</a>
+      </div>
+      <ul class="badges">
+        <li>NHS &amp; private patients</li>
+        <li>Children welcome</li>
+        <li>Open Saturdays</li>
+        <li>Free on-site parking</li>
+        <li>Step-free access</li>
+      </ul>
+    </div>
+    <div class="hero-card" id="hours">
+      <h3>Opening hours</h3>
+      <table class="hours">
+        <tr><td>Monday</td><td>8:00am to 7:00pm</td></tr>
+        <tr><td>Tuesday</td><td>8:00am to 7:00pm</td></tr>
+        <tr><td>Wednesday</td><td>8:00am to 7:00pm</td></tr>
+        <tr><td>Thursday</td><td>8:00am to 7:00pm</td></tr>
+        <tr><td>Friday</td><td>8:00am to 5:00pm</td></tr>
+        <tr><td>Saturday</td><td>9:00am to 1:00pm</td></tr>
+        <tr class="closed"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p class="note">Closed on bank holidays. Phone lines open 8:00am on weekdays and 9:00am on Saturdays. Out of hours, call NHS 111.</p>
+    </div>
+  </div>
+</section>
+
+<section id="treatments">
+  <div class="wrap">
+    <div class="kicker">Treatments</div>
+    <h2>Everything your smile needs, under one roof</h2>
+    <p class="intro">From a child's first check-up to implants and clear aligners, our dentists explain every option and cost before any treatment starts.</p>
+    <div class="grid g3">
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Check-ups</h3><p>A full examination of teeth, gums and mouth, with X-rays when needed. We recommend a check-up every 6 to 12 months.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20l7-7"/><path d="M14 4l6 6-5 5-6-6z"/></svg></div><h3>Hygiene</h3><p>Scale and polish, gum health advice and Airflow stain removal with our hygienists. No dentist referral needed.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M7 4c2-1 3 0 5 0s3-1 5 0 2 5 0 9c-1 3-1 7-3 7s-1-4-2-4-1 4-3 4-2-4-3-7C4 9 5 5 7 4z"/></svg></div><h3>Fillings &amp; crowns</h3><p>Tooth-coloured fillings, crowns, bridges and root canal treatment to repair and protect damaged teeth.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2l2.5 6.5L21 9l-5 4.5L17.5 21 12 17l-5.5 4L8 13.5 3 9l6.5-.5z"/></svg></div><h3>Whitening</h3><p>Dentist-supervised home whitening with custom trays. A safe, gradual way to lift shades over two weeks.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="10" rx="5"/><path d="M8 7v10M12 7v10M16 7v10"/></svg></div><h3>Clear aligners</h3><p>Nearly invisible braces for adults and teens. Free 20-minute consultation with a 3D scan of your teeth.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3v8M8 11h8l-1 10H9z"/></svg></div><h3>Implants</h3><p>Permanent replacement for missing teeth. We assess bone, health and budget at a consultation first.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M5 21c1-4 4-6 7-6s6 2 7 6"/></svg></div><h3>Children's dentistry</h3><p>Gentle first visits, fluoride varnish and fissure sealants. Children can usually be seen on the same visit as a parent.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a7 7 0 0 1 14 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg></div><h3>Nervous patients</h3><p>Longer appointments, a "stop" signal, numbing gel before injections and IV sedation on selected Thursdays.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4"/></svg></div><h3>Emergency care</h3><p>Same-day slots kept every weekday and on Saturday morning for pain, swelling, broken teeth and lost fillings.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="prices">
+  <div class="wrap">
+    <div class="kicker">Private fees</div>
+    <h2>Clear prices, agreed before treatment</h2>
+    <p class="intro">You will always get a written treatment plan with the full cost before we start. Payment is taken at each appointment by card, contactless, Apple Pay or Google Pay. We do not accept cheques.</p>
+    <table class="price-table">
+      <tr><th>Private treatment</th><th>Price</th></tr>
+      <tr><td>New patient examination (45 minutes, includes X-rays)</td><td>£85</td></tr>
+      <tr><td>Routine check-up (existing patient)</td><td>£60</td></tr>
+      <tr><td>Hygienist appointment (30 minutes)</td><td>£75</td></tr>
+      <tr><td>Emergency appointment (assessment and pain relief)</td><td>£95</td></tr>
+      <tr><td>White filling</td><td>from £140</td></tr>
+      <tr><td>Extraction (simple)</td><td>from £160</td></tr>
+      <tr><td>Root canal treatment</td><td>from £450</td></tr>
+      <tr><td>Porcelain crown</td><td>from £695</td></tr>
+      <tr><td>Home teeth whitening (both arches)</td><td>£395</td></tr>
+      <tr><td>Clear aligner consultation and 3D scan</td><td>Free</td></tr>
+      <tr><td>Clear aligners (full course)</td><td>from £2,950</td></tr>
+      <tr><td>Single dental implant (including crown)</td><td>from £2,450</td></tr>
+      <tr><td>Children's check-up (under 18, private)</td><td>£35</td></tr>
+    </table>
+    <p class="note">Interest-free finance over 12 months is available for private treatment plans over £500, subject to status. Our <strong>Unreal Care Plan</strong> costs £16.50 a month and covers two check-ups and two hygiene visits a year plus 10% off other private treatment. Children of plan members join free.</p>
+  </div>
+</section>
+
+<section id="nhs">
+  <div class="wrap">
+    <div class="kicker">NHS and private</div>
+    <h2>We see both NHS and private patients</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>NHS dentistry</h3>
+        <p>We hold an NHS contract and offer NHS check-ups and treatment.</p>
+        <ul class="policy">
+          <li><strong>Children (under 18)</strong> are accepted as new NHS patients now, with no waiting list. NHS treatment is free for under 18s.</li>
+          <li><strong>Adults</strong> can join our NHS waiting list. The current wait for a new adult NHS appointment is around 8 weeks.</li>
+          <li>NHS treatment is free if you are pregnant, have had a baby in the last 12 months, are under 19 and in full-time education, or receive certain benefits. Please bring proof.</li>
+          <li>NHS charges are set nationally: Band 1 (check-up) £27.40, Band 2 (fillings, extractions, root canal) £75.30, Band 3 (crowns, dentures, bridges) £326.70. Urgent NHS care is charged at Band 1.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Private dentistry</h3>
+        <p>Private patients get longer appointments, evening and Saturday slots, and treatments not available on the NHS such as whitening, clear aligners and implants.</p>
+        <ul class="policy">
+          <li>New private patients are accepted now and can usually be seen within a week.</li>
+          <li>NHS patients can choose private treatment for some items, such as white fillings on back teeth. Your dentist will explain the difference.</li>
+          <li>See our <a href="#prices">private fees</a> and the Unreal Care Plan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="children">
+  <div class="wrap">
+    <div class="kicker">Children and families</div>
+    <h2>Little smiles welcome from the first tooth</h2>
+    <div class="grid g3">
+      <div class="card"><h3>From the first tooth</h3><p>Bring your child from when their first tooth appears, or by their first birthday. Babies and toddlers can sit on a parent's lap.</p></div>
+      <div class="card"><h3>Family appointments</h3><p>Book back-to-back slots so the whole family is seen in one visit. Ask for a family booking when you call or chat.</p></div>
+      <div class="card"><h3>After-school slots</h3><p>Children's appointments are available until 7:00pm Monday to Thursday and on Saturday mornings, so they do not miss school.</p></div>
+      <div class="card"><h3>Who can bring a child</h3><p>Under 16s must be accompanied by a parent or guardian. 16 and 17 year olds may attend on their own.</p></div>
+      <div class="card"><h3>Prevention</h3><p>Fluoride varnish from age 3 and fissure sealants on adult back teeth, free on the NHS for eligible children.</p></div>
+      <div class="card"><h3>Brave Smiles club</h3><p>Every child gets a sticker and a chart. Five visits earns a new toothbrush and a certificate.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap team">
+    <div class="kicker">Meet the team</div>
+    <h2>Friendly faces, fictional names</h2>
+    <p class="intro">Our team speaks English, Hindi, Polish and Spanish. Tell us if you would like a particular dentist or language when you book.</p>
+    <div class="grid g3">
+      <div class="card"><div class="avatar" style="background:#0f7c7a">IM</div><h3>Dr Ivy Molar</h3><p class="role">Principal Dentist</p><p>Ivy founded Unreal Dentist and leads our implant and family care. She works Monday to Thursday.</p></div>
+      <div class="card"><div class="avatar" style="background:#ef6f5e">SC</div><h3>Dr Sam Canine</h3><p class="role">Associate Dentist</p><p>Sam provides NHS and private care and our clear aligner treatment. He works Tuesday to Saturday.</p></div>
+      <div class="card"><div class="avatar" style="background:#3c6e91">AP</div><h3>Dr Anya Premolar</h3><p class="role">Associate Dentist</p><p>Anya has a special interest in children and nervous patients and runs our Thursday sedation clinic.</p></div>
+      <div class="card"><div class="avatar" style="background:#7a5aa6">LF</div><h3>Leo Floss</h3><p class="role">Dental Hygienist</p><p>Leo looks after gum health and stain removal. Available Monday, Wednesday, Friday and Saturday.</p></div>
+      <div class="card"><div class="avatar" style="background:#c48a2a">MB</div><h3>Maya Brightwell</h3><p class="role">Practice Manager</p><p>Maya handles treatment plans, finance, NHS queries and any feedback about your visit.</p></div>
+      <div class="card"><div class="avatar" style="background:#4b8a5a">RT</div><h3>Rosa Tartar</h3><p class="role">Lead Receptionist</p><p>Rosa and the front desk team manage bookings, reminders and the waiting list.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="emergency">
+  <div class="wrap">
+    <div class="emergency">
+      <h2>Dental emergency?</h2>
+      <p>We keep emergency appointments free every day we are open. Call <a href="tel:+441632960000"><strong>01632 960 000</strong></a> from 8:00am on weekdays or 9:00am on Saturday, or use the chat, and we will try to see you the same day. You do not need to be registered with us.</p>
+      <div class="grid g3">
+        <div class="box"><h3>Call us for</h3><ul><li>Toothache or pain that will not settle</li><li>A broken or chipped tooth</li><li>A lost filling or crown</li><li>A knocked-out adult tooth (call immediately, keep the tooth in milk)</li><li>Swelling in the gum or face that is not affecting breathing</li></ul></div>
+        <div class="box"><h3>When we are closed</h3><p>Evenings, Sundays and bank holidays: call <strong>NHS 111</strong> or visit 111.nhs.uk. They can book you into an urgent dental service.</p></div>
+        <div class="box"><h3>Go to A&amp;E or call 999 if</h3><ul><li>Swelling affects your breathing, swallowing or eye</li><li>Bleeding will not stop after 20 minutes of firm pressure</li><li>You have a serious injury to your face or jaw</li></ul></div>
+      </div>
+      <p class="note" style="color:#fff">Emergency fees: £95 private, or the NHS urgent care charge of £27.40 for NHS patients (free if you are exempt).</p>
+    </div>
+  </div>
+</section>
+
+<section id="policies">
+  <div class="wrap">
+    <div class="kicker">Appointments</div>
+    <h2>Booking, rescheduling and cancellations</h2>
+    <div class="grid g2">
+      <div class="card">
+        <h3>Rescheduling and cancelling</h3>
+        <ul class="policy">
+          <li>Please give at least <strong>48 hours' notice</strong> to move or cancel an appointment. There is no charge if you do.</li>
+          <li>Private appointments cancelled or moved with less than 48 hours' notice, or missed, are charged a <strong>£30 fee</strong> (£60 for appointments of 60 minutes or longer).</li>
+          <li>There is no fee for NHS appointments, but after two missed NHS appointments in 12 months we may not be able to offer further routine NHS care.</li>
+          <li>Private appointments of 60 minutes or longer need a <strong>£50 deposit</strong> when booking, which comes off your bill.</li>
+          <li>You can reschedule by phone, by chat, or by replying to your reminder text.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Reminders and running late</h3>
+        <ul class="policy">
+          <li>We send a text reminder 2 days before your appointment and an email the week before.</li>
+          <li>If you are more than 10 minutes late we may need to rebook you, as later patients would be kept waiting.</li>
+          <li>New patients should arrive 10 minutes early to complete a medical history form, or fill it in online from the link in your confirmation.</li>
+          <li>Please bring a list of any medicines you take.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="visit">
+  <div class="wrap">
+    <div class="kicker">Visit us</div>
+    <h2>Finding the practice</h2>
+    <div class="grid g3">
+      <div class="card"><h3>Address</h3><p>Unreal Dentist<br>12 Imaginary Lane<br>Fableton<br>FB1 2UD</p><p>Phone: <a href="tel:+441632960000">01632 960 000</a><br>Email: <a href="mailto:hello@unrealdentist.example">hello@unrealdentist.example</a></p></div>
+      <div class="card"><h3>Parking and transport</h3><p><strong>Free on-site parking</strong> for patients, with 12 spaces behind the practice including 2 accessible bays. Enter from Make-Believe Road.</p><p>Bus routes 7 and 21 stop outside. Fableton station is a 6-minute walk. Bike racks at the front door.</p></div>
+      <div class="card"><h3>Accessibility</h3><p>Step-free entrance and two ground-floor surgeries for wheelchair users and buggies. Accessible toilet, hearing loop at reception and baby changing facilities. Assistance dogs welcome.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="kicker">Questions</div>
+    <h2>Frequently asked questions</h2>
+    <details><summary>Are you open on Saturdays?</summary><p>Yes. We are open every Saturday from 9:00am to 1:00pm for check-ups, hygiene, children's appointments and emergencies. We are closed on Sundays and bank holidays.</p></details>
+    <details><summary>Do you take NHS patients?</summary><p>Yes. We accept new NHS patients under 18 now. Adults can join our NHS waiting list, currently around 8 weeks. Private appointments are available within about a week.</p></details>
+    <details><summary>Do you see children?</summary><p>Yes, from their first tooth. NHS care for under 18s is free, and children can be booked alongside a parent.</p></details>
+    <details><summary>Is there parking?</summary><p>Yes, free parking for patients behind the practice (12 spaces, 2 accessible bays), entered from Make-Believe Road.</p></details>
+    <details><summary>Is there a fee to reschedule?</summary><p>No, if you give at least 48 hours' notice. Private appointments moved, cancelled or missed with less notice cost £30 (£60 for 60+ minute appointments). There is no fee for NHS appointments.</p></details>
+    <details><summary>What should I do in a dental emergency?</summary><p>Call 01632 960 000 or use the chat when we are open and we will try to see you the same day. Out of hours, call NHS 111. Go to A&amp;E or call 999 if swelling affects breathing, swallowing or your eye, or bleeding will not stop.</p></details>
+    <details><summary>Do I need to register with you to get an emergency appointment?</summary><p>No. We see non-registered patients in emergencies. The fee is £95 private, or £27.40 on the NHS if you are eligible.</p></details>
+    <details><summary>How do I pay?</summary><p>By card, contactless, Apple Pay or Google Pay at each appointment. Interest-free finance over 12 months is available for private plans over £500.</p></details>
+    <details><summary>Can I see a hygienist without a check-up?</summary><p>Yes. Private hygiene appointments can be booked directly for £75 (30 minutes).</p></details>
+    <details><summary>Do you offer sedation for nervous patients?</summary><p>Yes. Dr Anya Premolar runs an IV sedation clinic on selected Thursdays. Ask for a free nervous patient chat first.</p></details>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <div class="book">
+      <div>
+        <h2>Book your appointment</h2>
+        <p>Chat with our virtual receptionist any time, day or night, to book, move or cancel an appointment, join the NHS waiting list or ask about prices. Or call the team during opening hours.</p>
+      </div>
+      <div>
+        <a class="btn" href="tel:+441632960000">Call 01632 960 000</a>
+        <p style="margin-top:14px">Or use the chat button in the bottom corner of this page.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div><h3>Unreal Dentist</h3><p>12 Imaginary Lane, Fableton, FB1 2UD<br>01632 960 000<br>hello@unrealdentist.example</p></div>
+      <div><h3>Opening hours</h3><p>Mon to Thu 8:00am to 7:00pm<br>Fri 8:00am to 5:00pm<br>Sat 9:00am to 1:00pm<br>Sun and bank holidays closed</p></div>
+      <div><h3>Out of hours</h3><p>Call NHS 111 for urgent dental care. Call 999 for a life-threatening emergency.</p></div>
+    </div>
+    <div class="fine">Unreal Dentist is fictional. The practice, people, address, phone number (an Ofcom drama number) and email are made up for demonstration only. Built by <a href="https://talkcx.co.uk">TalkCX</a> to showcase an AI receptionist powered by PolyAI.</div>
+  </div>
+</footer>
+
+<script src="https://messaging.uk-1.poly.ai/widget/PPCRQSAvK8bgoCgKFW5YNdJm6Zqxpug0dDNLoMhOIEY.js"></script>
+</body>
+</html>
