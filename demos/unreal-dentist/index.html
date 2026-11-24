@@ -84,11 +84,15 @@ footer a{color:#9fe3da}
 footer .grid{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
 footer h3{color:#fff;font-size:1rem}
 .fine{border-top:1px solid #2c4a54;margin-top:32px;padding-top:18px;font-size:.82rem;color:#8fa9b0}
+/* PolyAI webchat: pin launcher and panel to bottom right */
+#poly-ai-chat{top:auto!important;left:auto!important;right:24px!important;bottom:24px!important}
+@media(max-height:680px){#poly-ai-chat{bottom:8px!important}}
+@media(max-width:480px){#poly-ai-chat{right:8px!important}}
 </style>
 </head>
 <body>
 
-<div class="demo-bar">Demo website. Unreal Dentist is a fictional practice created by <a href="https://talkcx.co.uk">TalkCX</a> to show an AI receptionist in action. Try the chat in the corner.</div>
+<div class="demo-bar">Demo website. Unreal Dentist is a fictional practice created by <a href="https://talkcx.co.uk">TalkCX</a> to show an AI receptionist in action. Try the chat in the bottom right corner.</div>
 
 <header>
   <nav class="nav" aria-label="Main">
