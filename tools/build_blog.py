@@ -23,7 +23,7 @@ import datetime, html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://talkcx.co.uk"
 BOOK = "https://calendar.app.google/L8kcdCoEQL7EJN2VA"
-STATIC_PAGES = ["", "about.html", "services.html", "pricing.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
+STATIC_PAGES = ["", "about.html", "pricing.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
                 "contact.html", "privacy.html", "terms.html"]  # msa/dpa stay unlisted
 
 def head(title, description, canonical, extra=""):
@@ -59,8 +59,7 @@ def head(title, description, canonical, extra=""):
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
-        <li><a href="../services.html">Services</a></li>
-        <li><a href="../pricing.html">Pricing</a></li>
+        <li><a href="../pricing.html">Services &amp; Pricing</a></li>
         <li><a href="../insights.html">Insights</a></li>
         <li><a href="./" class="active">Blog</a></li>
         <li><a href="../partners.html">Partners</a></li>
@@ -88,7 +87,7 @@ FOOT = f"""
         <h4>Company</h4>
         <ul>
           <li><a href="../about.html">About</a></li>
-          <li><a href="../services.html">Services</a></li>
+          <li><a href="../pricing.html#services">Services</a></li>
           <li><a href="../pricing.html">Pricing</a></li>
           <li><a href="../insights.html">Insights</a></li>
           <li><a href="./">Blog</a></li>
