@@ -23,7 +23,7 @@ import datetime, html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://talkcx.co.uk"
 BOOK = "https://calendar.app.google/to6QeKfcJrDnS5b8A"
-STATIC_PAGES = ["", "about.html", "services.html", "pricing.html", "insights.html", "partners.html",
+STATIC_PAGES = ["", "about.html", "services.html", "pricing.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
                 "contact.html", "privacy.html", "terms.html"]  # msa/dpa stay unlisted
 
 def head(title, description, canonical, extra=""):
@@ -98,9 +98,9 @@ FOOT = f"""
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="../services.html">AI Readiness Assessment</a></li>
-          <li><a href="../services.html">Vendor Selection &amp; RFP</a></li>
-          <li><a href="../services.html">Conversational AI Design</a></li>
+          <li><a href="../ai-readiness-assessment.html">AI Readiness Assessment</a></li>
+          <li><a href="../vendor-selection-rfp.html">Vendor Selection &amp; RFP</a></li>
+          <li><a href="../conversational-ai-design.html">Conversational AI Design</a></li>
         </ul>
       </div>
       <div>
