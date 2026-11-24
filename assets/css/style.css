@@ -686,3 +686,7 @@ a.service-link:hover h3 { color: var(--neon-blue); }
 @media (max-width: 900px) { .grid-3.price-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
 .about-founder p { font-size: 1.15rem; line-height: 1.6; color: var(--text); margin: 0; }
 .h1-kicker { display: block; font-size: 0.32em; letter-spacing: 0.18em; text-transform: uppercase; color: var(--neon-blue); text-shadow: none; margin-bottom: 14px; }
+.svc-more { display: block; margin-top: 14px; font-weight: 700; color: var(--neon-blue); font-size: 0.9rem; }
+a.service-card.service-link { display: flex; flex-direction: column; }
+a.service-card.service-link .tag { align-self: flex-start; }
+a.service-card.service-link:hover .svc-more { text-decoration: underline; }
