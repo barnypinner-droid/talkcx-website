@@ -65,11 +65,11 @@ def head(title, description, canonical, extra=""):
         <li><a href="./" class="active">Blog</a></li>
         <li><a href="../partners.html">Partners</a></li>
         <li><a href="../contact.html">Contact</a></li>
-        <li class="nav-cta-item"><a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Consultation</a></li>
+        <li class="nav-cta-item"><a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a call</a></li>
       </ul>
     </nav>
     <div class="nav-actions">
-      <a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">Book a Consultation</a>
+      <a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary header-cta">Book a call</a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </div>
@@ -129,7 +129,7 @@ CTA = f"""
     <div class="cta-band reveal text-center">
       <h2>Want the honest read on your own phones?</h2>
       <p>A 30-minute call, no obligation. We'll tell you where AI would genuinely help, and where it wouldn't.</p>
-      <a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a Consultation</a>
+      <a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a call</a>
     </div>
   </section>
 """

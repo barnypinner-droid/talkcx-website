@@ -511,7 +511,7 @@ footer.site-footer {
 .legal-content a { text-decoration: underline; text-underline-offset: 2px; }
 
 /* ---------- Page hero (non-home) ---------- */
-.page-hero { padding: 70px 0 50px; text-align: center; }
+.page-hero { padding: 70px 24px 50px; text-align: center; }
 .page-hero h1 { font-size: clamp(2rem, 5vw, 3rem); }
 .page-hero p { max-width: 640px; margin: 0 auto; font-size: 1.05rem; }
 
@@ -654,3 +654,33 @@ a.service-link:hover h3 { color: var(--neon-blue); }
 .pick-btn { font: inherit; font-weight: 700; cursor: pointer; padding: 10px 18px; border-radius: 999px; background: transparent; color: var(--text-dim); border: 1.5px solid rgba(255,255,255,0.15); }
 .pick-btn:hover { border-color: var(--neon-blue); color: #fff; }
 .pick-btn.active { border-color: var(--neon-magenta); color: #fff; box-shadow: 0 0 18px rgba(233,0,255,0.3); }
+
+/* ---------- Header CTA ---------- */
+.header-cta { padding: 10px 20px; font-size: 0.9rem; white-space: nowrap; }
+@media (min-width: 861px) and (max-width: 1180px) { nav.primary-nav ul { gap: 22px; } .logo-img { height: 84px; } }
+
+/* ---------- About page ---------- */
+.about-section { padding: 40px 24px; }
+.about-stats { background: rgba(10,20,50,0.92); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 30px 20px; }
+.about-split { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; align-items: center; background: rgba(10,20,50,0.92); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 40px; }
+.about-split h2 { font-size: clamp(1.6rem, 3vw, 2.1rem); }
+.about-founder h3 { font-size: 1.5rem; margin-bottom: 10px; }
+.about-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--text-dimmer); margin: 14px 0 8px; }
+.chip-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip-list li { padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.04); font-size: 0.85rem; font-weight: 600; color: var(--text); }
+.chip-list-lg { justify-content: center; gap: 10px; margin-top: 18px; }
+.chip-list-lg li { font-size: 0.95rem; padding: 8px 18px; }
+.value-card h3 { margin-top: 12px; }
+.value-icon { font-family: 'DM Sans', sans-serif; font-weight: 800; font-size: 1.6rem; }
+.value-icon.yellow { color: var(--neon-yellow); } .value-icon.magenta { color: var(--neon-magenta); } .value-icon.blue { color: var(--neon-blue); }
+.track-card { text-align: center; padding: 48px 40px; background: rgba(10,20,50,0.85); }
+.track-card h2 { font-size: clamp(1.6rem, 3.5vw, 2.3rem); max-width: 720px; margin: 0 auto 12px; }
+@media (max-width: 860px) { .about-split { grid-template-columns: 1fr; padding: 28px 22px; } }
+
+/* Local plan cards: equal heights, aligned rows */
+.price-grid { align-items: stretch; }
+.price-grid .price-card h3 { min-height: 1.4em; }
+.price-grid .price-card .price-for { min-height: 3.2em; }
+.price-grid .price-card .price-list { flex: 1; }
+.price-grid .price-card .price-actions { margin-top: 22px; }
+@media (max-width: 900px) { .grid-3.price-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
