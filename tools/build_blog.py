@@ -48,6 +48,7 @@ def head(title, description, canonical, extra=""):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:wght@400;500;700;800;900&display=swap" />
 <link rel="stylesheet" href="../assets/css/style.css" />
+<script src="../assets/js/analytics.js" defer></script>
 {extra}</head>
 <body>
 
@@ -110,7 +111,7 @@ FOOT = f"""
     </div>
     <div class="footer-bottom">
       <span>© 2026 TalkCX. All rights reserved.</span>
-      <span class="footer-legal-links"><a href="../privacy.html">Privacy Policy</a> · <a href="../terms.html">Terms of Use</a></span>
+      <span class="footer-legal-links"><a href="../privacy.html">Privacy Policy</a> · <a href="../terms.html">Terms of Use</a> · <a href="#" data-cookie-settings>Cookie settings</a></span>
       <span>PolyAI and all partner names are trademarks of their respective owners.</span>
     </div>
   </div>

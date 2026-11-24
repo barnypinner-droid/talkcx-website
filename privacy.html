@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=DM+Sans:wght@400;500;700;800;900&display=swap" />
 <link rel="stylesheet" href="assets/css/style.css" />
+<script src="assets/js/analytics.js" defer></script>
 </head>
 <body>
 
@@ -44,7 +45,7 @@
 
   <section class="container">
     <div class="card legal-content" style="max-width:760px;margin:0 auto;padding:48px;">
-      <p style="color:var(--text-dimmer);font-size:0.85rem;">Last updated: October 2026</p>
+      <p style="color:var(--text-dimmer);font-size:0.85rem;">Last updated: November 2026</p>
 
       <h3>Who we are</h3>
       <p>TalkCX is a vendor-neutral CCaaS and conversational AI consultancy, and an official PolyAI reseller partner, based in the United Kingdom. For the purposes of UK data protection law, TalkCX is the data controller for personal data collected through this website. You can contact us at <a href="mailto:info@talkcx.co.uk" style="color:var(--neon-blue);">info@talkcx.co.uk</a>.</p>
@@ -53,9 +54,13 @@
       <p>We only collect personal data that you give us directly. This happens in two places on this site:</p>
       <ul style="color:var(--text-dim);display:flex;flex-direction:column;gap:8px;margin:0 0 1em;padding-left:20px;list-style:disc;">
         <li>The contact form on our <a href="contact.html" style="color:var(--neon-blue);">Contact page</a>, which collects your name, work email, company name and message.</li>
-        <li>If you book a call via Calendly, Calendly collects your name, email and the details needed to schedule that call, under its own privacy policy.</li>
+        <li>If you book a call through our Google Calendar booking page, Google collects your name, email and the details needed to schedule that call, under its own privacy policy.</li>
       </ul>
-      <p>We do not use analytics, advertising trackers, or tracking cookies on this site. This site does not use a customer account system, and we do not knowingly collect data from children.</p>
+      <p>If you accept analytics cookies, we also collect information about how you use the site (see <a href="#cookies" style="color:var(--neon-blue);">Cookies and analytics</a> below). We do not use advertising trackers. This site does not use a customer account system, and we do not knowingly collect data from children.</p>
+
+      <h3 id="cookies">Cookies and analytics</h3>
+      <p>We use Google Analytics 4 to understand how visitors find and use this site, for example which pages are read and which websites or campaigns sent visitors here. Google Analytics only runs, and its cookies (named <code>_ga</code> and <code>_ga_*</code>) are only set, if you press "Accept" on our cookie banner. They last up to 2 years. If you press "Reject", no analytics cookies are set and nothing is sent to Google Analytics.</p>
+      <p>We store your choice in your browser's local storage for about 6 months. You can change it at any time with the "Cookie settings" link at the bottom of every page. Google Analytics data is processed by Google as our processor under its data processing terms, and Google does not log or store visitor IP addresses in Google Analytics 4. Our legal basis for analytics is your consent.</p>
 
       <h3>How we use your data</h3>
       <p>We use the information you submit to respond to your enquiry, discuss and scope potential work, and, where you become a client, to deliver our services and manage that relationship. Our legal basis for processing enquiry data is our legitimate interest in responding to business enquiries, and, where applicable, taking steps towards entering into a contract with you.</p>
@@ -64,7 +69,8 @@
       <p>We use a small number of third-party services to run this site and respond to enquiries:</p>
       <ul style="color:var(--text-dim);display:flex;flex-direction:column;gap:8px;margin:0 0 1em;padding-left:20px;list-style:disc;">
         <li><strong style="color:var(--text);">Formspree</strong> processes contact form submissions and delivers them to our inbox.</li>
-        <li><strong style="color:var(--text);">Calendly</strong> handles call scheduling if you choose to book a consultation.</li>
+        <li><strong style="color:var(--text);">Google Calendar</strong> handles call scheduling if you choose to book a consultation.</li>
+        <li><strong style="color:var(--text);">Google Analytics</strong> measures site usage, only if you accept analytics cookies.</li>
         <li><strong style="color:var(--text);">Google Fonts</strong> serves the typefaces used on this site, which may log your IP address as part of the request.</li>
       </ul>
       <p>We do not sell your personal data, and we do not share it with any other third party except where required by law.</p>
@@ -119,7 +125,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 TalkCX. All rights reserved.</span>
-      <span class="footer-legal-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></span>
+      <span class="footer-legal-links"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a> · <a href="#" data-cookie-settings>Cookie settings</a></span>
       <span>PolyAI and all partner names are trademarks of their respective owners.</span>
     </div>
   </div>
