@@ -684,3 +684,4 @@ a.service-link:hover h3 { color: var(--neon-blue); }
 .price-grid .price-card .price-list { flex: 1; }
 .price-grid .price-card .price-actions { margin-top: 22px; }
 @media (max-width: 900px) { .grid-3.price-grid { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; } }
+.about-founder p { font-size: 1.15rem; line-height: 1.6; color: var(--text); margin: 0; }
