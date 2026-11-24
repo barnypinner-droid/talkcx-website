@@ -79,3 +79,36 @@ if (contactForm) {
     msg.value = "I'm interested in the " + pkg.slice(0, 60) + " package for my business.";
   }
 })();
+
+// Pricing: token plan picker and voice/digital slider
+(() => {
+  const calc = document.querySelector("#token-calc");
+  if (!calc) return;
+  const cards = document.querySelectorAll(".plan-card");
+  const mix = document.querySelector("#mix");
+  const fmt = (n) => Math.round(n).toLocaleString("en-GB");
+  let tokens = 75000;
+  const $ = (id) => document.getElementById(id);
+  function render() {
+    const v = Number(mix.value);
+    const voiceT = tokens * v / 100;
+    const digT = tokens - voiceT;
+    $("out-voice").textContent = fmt(voiceT / 2);
+    $("out-digital").textContent = fmt(digT);
+    $("out-voice-t").textContent = fmt(voiceT) + " tokens";
+    $("out-digital-t").textContent = fmt(digT) + " tokens";
+    $("mix-label").textContent = v === 100 ? "all voice" : v === 0 ? "all digital" : v + "% voice, " + (100 - v) + "% digital";
+    $("bar-voice").style.width = v + "%";
+  }
+  cards.forEach((c) => c.addEventListener("click", () => {
+    cards.forEach((x) => { x.classList.remove("active"); x.setAttribute("aria-pressed", "false"); });
+    c.classList.add("active"); c.setAttribute("aria-pressed", "true");
+    tokens = Number(c.dataset.tokens);
+    $("calc-plan").textContent = c.dataset.name;
+    $("calc-tokens").textContent = fmt(tokens);
+    $("calc-price").textContent = "£" + fmt(Number(c.dataset.price));
+    render();
+  }));
+  mix.addEventListener("input", render);
+  render();
+})();
