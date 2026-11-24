@@ -22,8 +22,8 @@ import datetime, html, json, pathlib, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://talkcx.co.uk"
-BOOK = "https://calendar.app.google/to6QeKfcJrDnS5b8A"
-STATIC_PAGES = ["", "about.html", "services.html", "insights.html", "partners.html",
+BOOK = "https://calendar.app.google/L8kcdCoEQL7EJN2VA"
+STATIC_PAGES = ["", "about.html", "services.html", "pricing.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
                 "contact.html", "privacy.html", "terms.html"]  # msa/dpa stay unlisted
 
 def head(title, description, canonical, extra=""):
@@ -60,6 +60,7 @@ def head(title, description, canonical, extra=""):
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../services.html">Services</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
         <li><a href="../insights.html">Insights</a></li>
         <li><a href="./" class="active">Blog</a></li>
         <li><a href="../partners.html">Partners</a></li>
@@ -88,6 +89,7 @@ FOOT = f"""
         <ul>
           <li><a href="../about.html">About</a></li>
           <li><a href="../services.html">Services</a></li>
+          <li><a href="../pricing.html">Pricing</a></li>
           <li><a href="../insights.html">Insights</a></li>
           <li><a href="./">Blog</a></li>
           <li><a href="../partners.html">Partners</a></li>
@@ -96,9 +98,9 @@ FOOT = f"""
       <div>
         <h4>Services</h4>
         <ul>
-          <li><a href="../services.html">AI Readiness Assessment</a></li>
-          <li><a href="../services.html">Vendor Selection &amp; RFP</a></li>
-          <li><a href="../services.html">Conversational AI Design</a></li>
+          <li><a href="../ai-readiness-assessment.html">AI Readiness Assessment</a></li>
+          <li><a href="../vendor-selection-rfp.html">Vendor Selection &amp; RFP</a></li>
+          <li><a href="../conversational-ai-design.html">Conversational AI Design</a></li>
         </ul>
       </div>
       <div>

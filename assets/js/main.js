@@ -70,3 +70,44 @@ if (contactForm) {
     }
   });
 }
+
+// Prefill the contact form when arriving from a pricing "Choose" button
+(() => {
+  const pkg = new URLSearchParams(window.location.search).get("package");
+  const msg = document.querySelector("#contact-form textarea[name='message']");
+  if (pkg && msg && !msg.value) {
+    msg.value = "I'm interested in the " + pkg.slice(0, 60) + " package for my business.";
+  }
+})();
+
+// Pricing: token plan pickers and voice/digital sliders
+document.querySelectorAll(".token-calc").forEach((calc) => {
+  const key = calc.id.replace("calc-", "");
+  const btns = document.querySelectorAll('[data-calc-for="' + key + '"]');
+  const q = (c) => calc.querySelector(c);
+  const mix = q(".c-mix");
+  const fmt = (n) => Math.round(n).toLocaleString("en-GB");
+  const start = Array.from(btns).find((b) => b.classList.contains("active")) || btns[0];
+  let tokens = Number(start.dataset.tokens);
+  function render() {
+    const v = Number(mix.value);
+    const voiceT = tokens * v / 100, digT = tokens - voiceT;
+    q(".c-voice").textContent = fmt(voiceT / 2);
+    q(".c-digital").textContent = fmt(digT);
+    q(".c-voice-t").textContent = fmt(voiceT) + " tokens";
+    q(".c-digital-t").textContent = fmt(digT) + " tokens";
+    q(".c-mix-label").textContent = v === 100 ? "all voice" : v === 0 ? "all digital" : v + "% voice, " + (100 - v) + "% digital";
+    q(".c-bar").style.width = v + "%";
+  }
+  btns.forEach((b) => b.addEventListener("click", () => {
+    btns.forEach((x) => { x.classList.remove("active"); x.setAttribute("aria-pressed", "false"); });
+    b.classList.add("active"); b.setAttribute("aria-pressed", "true");
+    tokens = Number(b.dataset.tokens);
+    q(".c-plan").textContent = b.dataset.name;
+    q(".c-tokens").textContent = fmt(tokens);
+    q(".c-price").textContent = "£" + fmt(Number(b.dataset.price));
+    render();
+  }));
+  mix.addEventListener("input", render);
+  render();
+});
