@@ -59,7 +59,7 @@ def head(title, description, canonical, extra=""):
       <ul>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
-        <li><a href="../pricing.html">Services &amp; Pricing</a></li>
+        <li><a href="../pricing.html">Pricing</a></li>
         <li><a href="../insights.html">Insights</a></li>
         <li><a href="./" class="active">Blog</a></li>
         <li><a href="../partners.html">Partners</a></li>
