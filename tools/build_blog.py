@@ -187,8 +187,8 @@ def build_post(p):
 
 def build_index(posts):
     url = f"{SITE}/blog/"
-    page = head("Blog: TalkCX | Practical notes on voice AI for UK businesses",
-                "Practical, hype-free notes on AI voice agents, missed calls and contact centre tech for UK contact centres and growing businesses.",
+    page = head("Blog: TalkCX | Contact Centre AI and Voice AI for UK Businesses",
+                "Practical, hype-free notes on Contact Centre AI, AI voice agents, AI call centres and missed calls, for UK contact centres and growing businesses.",
                 url)
     if posts:
         cards = "\n".join(f"""      <a href="{p['slug']}.html" class="card blog-card">
