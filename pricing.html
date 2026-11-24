@@ -39,7 +39,7 @@
    "name": "What happens if I go over my allowance?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Nothing stops working. Extra usage is charged at 20p a voice minute and 10p a digital conversation, billed monthly. If you go over regularly, we'll suggest the next package up."
+    "text": "Nothing stops working. Extra usage is charged at 10p a token (20p a voice minute, 10p a digital conversation), billed monthly. If you go over regularly, we'll suggest the next package up."
    }
   },
   {
@@ -107,7 +107,7 @@
   <section class="page-hero container">
     <div class="eyebrow magenta">Pricing</div>
     <h1>Contact Centre AI, <span class="gradient-text magenta">priced like a phone contract.</span></h1>
-    <p>A fixed monthly price with calls and digital conversations included. Pick the package that fits, and we set up and run the AI for you.</p>
+    <p>A fixed monthly price with a token allowance for calls and digital conversations included. Pick the package that fits, and we set up and run the AI for you.</p>
   </section>
 
   <section class="container" id="local">
@@ -122,8 +122,7 @@
         <div class="price">£100<span>/month per site</span></div>
         <p class="price-for">The AI answers when you're closed.</p>
         <ul class="price-list">
-          <li>300 voice minutes a month</li>
-          <li>200 digital conversations a month</li>
+          <li><strong>800 tokens a month</strong>: up to 400 voice minutes or 800 digital conversations, in any mix</li>
           <li>Evenings, weekends, bank holidays and lunchtimes</li>
           <li>Takes the caller's details and what they need</li>
           <li>Texts or emails the caller, and sends you a summary</li>
@@ -136,8 +135,7 @@
         <div class="price">£200<span>/month per site</span></div>
         <p class="price-for">An AI receptionist working alongside your team.</p>
         <ul class="price-list">
-          <li>600 voice minutes a month</li>
-          <li>400 digital conversations a month</li>
+          <li><strong>1,600 tokens a month</strong>: up to 800 voice minutes or 1,600 digital conversations, in any mix</li>
           <li>Answers any time: overflow when you're busy, plus out of hours</li>
           <li>Answers common questions and routes urgent calls</li>
           <li>Transfers callers to your team when they're free</li>
@@ -149,8 +147,7 @@
         <div class="price">£250<span>/month per site</span></div>
         <p class="price-for">Everything in In-House, connected to your booking system.</p>
         <ul class="price-list">
-          <li>700 voice minutes a month</li>
-          <li>400 digital conversations a month</li>
+          <li><strong>1,800 tokens a month</strong>: up to 900 voice minutes or 1,800 digital conversations, in any mix</li>
           <li>Books, moves and cancels appointments in your booking system</li>
           <li>Works with many practice and booking systems (we'll check yours)</li>
           <li>Everything in In-House</li>
@@ -158,7 +155,43 @@
         <div class="price-actions"><a class="btn btn-primary" href="contact.html?package=Connected">Choose Connected</a><a class="price-more" href="connected-ai-booking-agent.html">Full details &rarr;</a></div>
       </div>
     </div>
-    <p class="form-note text-center mt-40">Extra usage: 20p per voice minute, 10p per digital conversation. 10% off each additional site. 12-month option with a £295 setup fee. Prices exclude VAT.</p>
+    <div class="token-explainer reveal" style="margin-top:44px;">
+      <div class="token-rule"><span class="token-big">1 token</span><span>= 30 seconds of AI voice</span></div>
+      <div class="token-rule"><span class="token-big">1 token</span><span>= 1 digital conversation</span></div>
+      <p>Each plan includes a monthly allowance of tokens. Use them on calls, on website chat, WhatsApp and SMS, or any mix. Pick a plan and move the slider to see what it covers.</p>
+    </div>
+    <div class="card token-calc reveal" id="calc-local" data-period="month">
+      <div class="calc-pick" role="group" aria-label="Choose a local plan">
+        <button type="button" class="pick-btn" data-calc-for="local" data-tokens="800" data-name="Out of Hours" data-price="100" aria-pressed="false">Out of Hours</button>
+        <button type="button" class="pick-btn active" data-calc-for="local" data-tokens="1600" data-name="In-House" data-price="200" aria-pressed="true">In-House</button>
+        <button type="button" class="pick-btn" data-calc-for="local" data-tokens="1800" data-name="Connected" data-price="250" aria-pressed="false">Connected</button>
+      </div>
+      <div class="calc-head">
+        <div><span class="calc-label">Plan</span><span class="calc-plan c-plan">In-House</span></div>
+        <div><span class="calc-label">Tokens a month</span><span class="calc-plan c-tokens">1,600</span></div>
+        <div><span class="calc-label">Monthly per site</span><span class="calc-plan c-price">£200</span></div>
+      </div>
+      <label for="mix-local" class="calc-label">How you use your tokens: <strong class="c-mix-label">50% voice, 50% digital</strong></label>
+      <div class="slider-row">
+        <span>All digital</span>
+        <input type="range" class="c-mix" id="mix-local" min="0" max="100" step="5" value="50" />
+        <span>All voice</span>
+      </div>
+      <div class="calc-out">
+        <div class="calc-box voice">
+          <span class="calc-num c-voice"></span>
+          <span class="calc-unit">voice minutes a month</span>
+          <span class="calc-sub c-voice-t"></span>
+        </div>
+        <div class="calc-box digital">
+          <span class="calc-num c-digital"></span>
+          <span class="calc-unit">digital conversations a month</span>
+          <span class="calc-sub c-digital-t"></span>
+        </div>
+      </div>
+      <div class="token-bar" aria-hidden="true"><span class="c-bar" style="width:50%"></span></div>
+    </div>
+    <p class="form-note text-center mt-40">Extra usage: 10p a token (20p per voice minute, 10p per digital conversation). 10% off each additional site. 12-month option with a £295 setup fee. Prices exclude VAT.</p>
   </section>
 
   <section class="container" id="business" style="margin-top:70px;">
@@ -174,25 +207,25 @@
     </div>
 
     <div class="plan-grid reveal" role="group" aria-label="Choose a plan">
-      <button type="button" class="plan-card active" data-tokens="75000" data-name="Starter" data-price="625" aria-pressed="true">
+      <button type="button" class="plan-card active" data-calc-for="sme" data-tokens="75000" data-name="Starter" data-price="625" aria-pressed="true">
         <span class="plan-name">Starter</span>
         <span class="plan-price">£625<small>/month</small></span>
         <span class="plan-tokens">75,000 tokens a year</span>
         <span class="plan-split">Up to 37,500 voice minutes <em>or</em> 75,000 digital conversations</span>
       </button>
-      <button type="button" class="plan-card" data-tokens="150000" data-name="Growth" data-price="1250" aria-pressed="false">
+      <button type="button" class="plan-card" data-calc-for="sme" data-tokens="150000" data-name="Growth" data-price="1250" aria-pressed="false">
         <span class="plan-name">Growth</span>
         <span class="plan-price">£1,250<small>/month</small></span>
         <span class="plan-tokens">150,000 tokens a year</span>
         <span class="plan-split">Up to 75,000 voice minutes <em>or</em> 150,000 digital conversations</span>
       </button>
-      <button type="button" class="plan-card" data-tokens="300000" data-name="Scale" data-price="2500" aria-pressed="false">
+      <button type="button" class="plan-card" data-calc-for="sme" data-tokens="300000" data-name="Scale" data-price="2500" aria-pressed="false">
         <span class="plan-name">Scale</span>
         <span class="plan-price">£2,500<small>/month</small></span>
         <span class="plan-tokens">300,000 tokens a year</span>
         <span class="plan-split">Up to 150,000 voice minutes <em>or</em> 300,000 digital conversations</span>
       </button>
-      <button type="button" class="plan-card" data-tokens="600000" data-name="Contact Centre" data-price="5000" aria-pressed="false">
+      <button type="button" class="plan-card" data-calc-for="sme" data-tokens="600000" data-name="Contact Centre" data-price="5000" aria-pressed="false">
         <span class="plan-name">Contact Centre</span>
         <span class="plan-price">£5,000<small>/month</small></span>
         <span class="plan-tokens">600,000 tokens a year</span>
@@ -200,31 +233,31 @@
       </button>
     </div>
 
-    <div class="card token-calc reveal" id="token-calc">
+    <div class="card token-calc reveal" id="calc-sme" data-period="year">
       <div class="calc-head">
-        <div><span class="calc-label">Plan</span><span class="calc-plan" id="calc-plan">Starter</span></div>
-        <div><span class="calc-label">Tokens a year</span><span class="calc-plan" id="calc-tokens">75,000</span></div>
-        <div><span class="calc-label">Monthly</span><span class="calc-plan" id="calc-price">£625</span></div>
+        <div><span class="calc-label">Plan</span><span class="calc-plan c-plan">Starter</span></div>
+        <div><span class="calc-label">Tokens a year</span><span class="calc-plan c-tokens">75,000</span></div>
+        <div><span class="calc-label">Monthly</span><span class="calc-plan c-price">£625</span></div>
       </div>
-      <label for="mix" class="calc-label">How you use your tokens: <strong id="mix-label">50% voice, 50% digital</strong></label>
+      <label for="mix-sme" class="calc-label">How you use your tokens: <strong class="c-mix-label">50% voice, 50% digital</strong></label>
       <div class="slider-row">
         <span>All digital</span>
-        <input type="range" id="mix" min="0" max="100" step="5" value="50" aria-describedby="mix-label" />
+        <input type="range" class="c-mix" id="mix-sme" min="0" max="100" step="5" value="50" />
         <span>All voice</span>
       </div>
       <div class="calc-out">
         <div class="calc-box voice">
-          <span class="calc-num" id="out-voice">18,750</span>
+          <span class="calc-num c-voice"></span>
           <span class="calc-unit">voice minutes a year</span>
-          <span class="calc-sub" id="out-voice-t">37,500 tokens</span>
+          <span class="calc-sub c-voice-t"></span>
         </div>
         <div class="calc-box digital">
-          <span class="calc-num" id="out-digital">37,500</span>
+          <span class="calc-num c-digital"></span>
           <span class="calc-unit">digital conversations a year</span>
-          <span class="calc-sub" id="out-digital-t">37,500 tokens</span>
+          <span class="calc-sub c-digital-t"></span>
         </div>
       </div>
-      <div class="token-bar" aria-hidden="true"><span id="bar-voice" style="width:50%"></span></div>
+      <div class="token-bar" aria-hidden="true"><span class="c-bar" style="width:50%"></span></div>
     </div>
 
     <p class="text-center mt-40"><strong>Enterprise:</strong> 1.2 million tokens a year and up. <a href="contact.html?package=Enterprise">Talk to us</a> for a quote.</p>
@@ -286,7 +319,7 @@
       <div class="card faq-item"><h3>What is a token?</h3><p>Tokens are how plans are measured. One token covers 30 seconds of an AI voice call or one digital conversation, so a voice minute uses 2 tokens. Your tokens can go on calls, chat or any mix.</p></div>
       <div class="card faq-item"><h3>What counts as a voice minute?</h3><p>Time the AI agent spends on a call, measured in 30-second blocks. A two and a half minute call uses two and a half minutes of your allowance.</p></div>
       <div class="card faq-item"><h3>What is a digital conversation?</h3><p>One conversation with a customer on your website chat, WhatsApp or SMS, however many messages it takes.</p></div>
-      <div class="card faq-item"><h3>What happens if I go over my allowance?</h3><p>Nothing stops working. Extra usage is charged at 20p a voice minute and 10p a digital conversation, billed monthly. If you go over regularly, we'll suggest the next package up.</p></div>
+      <div class="card faq-item"><h3>What happens if I go over my allowance?</h3><p>Nothing stops working. Extra usage is charged at 10p a token (20p a voice minute, 10p a digital conversation), billed monthly. If you go over regularly, we'll suggest the next package up.</p></div>
       <div class="card faq-item"><h3>Can I change package?</h3><p>Yes. You can move up a package at any time. Moving down is possible at the end of each 12 months of your contract.</p></div>
       <div class="card faq-item"><h3>Is there a setup fee?</h3><p>Setup is free on 24-month local packages and on 3-year plans signed within 3 months of starting pay as you go. A 12-month local contract has a £295 setup fee.</p></div>
       <div class="card faq-item"><h3>Which AI does TalkCX use?</h3><p>Our voice and digital agents run on PolyAI, and TalkCX is an official PolyAI reseller partner. We design, set up and support the agent for you.</p></div>

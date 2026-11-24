@@ -80,35 +80,34 @@ if (contactForm) {
   }
 })();
 
-// Pricing: token plan picker and voice/digital slider
-(() => {
-  const calc = document.querySelector("#token-calc");
-  if (!calc) return;
-  const cards = document.querySelectorAll(".plan-card");
-  const mix = document.querySelector("#mix");
+// Pricing: token plan pickers and voice/digital sliders
+document.querySelectorAll(".token-calc").forEach((calc) => {
+  const key = calc.id.replace("calc-", "");
+  const btns = document.querySelectorAll('[data-calc-for="' + key + '"]');
+  const q = (c) => calc.querySelector(c);
+  const mix = q(".c-mix");
   const fmt = (n) => Math.round(n).toLocaleString("en-GB");
-  let tokens = 75000;
-  const $ = (id) => document.getElementById(id);
+  const start = Array.from(btns).find((b) => b.classList.contains("active")) || btns[0];
+  let tokens = Number(start.dataset.tokens);
   function render() {
     const v = Number(mix.value);
-    const voiceT = tokens * v / 100;
-    const digT = tokens - voiceT;
-    $("out-voice").textContent = fmt(voiceT / 2);
-    $("out-digital").textContent = fmt(digT);
-    $("out-voice-t").textContent = fmt(voiceT) + " tokens";
-    $("out-digital-t").textContent = fmt(digT) + " tokens";
-    $("mix-label").textContent = v === 100 ? "all voice" : v === 0 ? "all digital" : v + "% voice, " + (100 - v) + "% digital";
-    $("bar-voice").style.width = v + "%";
+    const voiceT = tokens * v / 100, digT = tokens - voiceT;
+    q(".c-voice").textContent = fmt(voiceT / 2);
+    q(".c-digital").textContent = fmt(digT);
+    q(".c-voice-t").textContent = fmt(voiceT) + " tokens";
+    q(".c-digital-t").textContent = fmt(digT) + " tokens";
+    q(".c-mix-label").textContent = v === 100 ? "all voice" : v === 0 ? "all digital" : v + "% voice, " + (100 - v) + "% digital";
+    q(".c-bar").style.width = v + "%";
   }
-  cards.forEach((c) => c.addEventListener("click", () => {
-    cards.forEach((x) => { x.classList.remove("active"); x.setAttribute("aria-pressed", "false"); });
-    c.classList.add("active"); c.setAttribute("aria-pressed", "true");
-    tokens = Number(c.dataset.tokens);
-    $("calc-plan").textContent = c.dataset.name;
-    $("calc-tokens").textContent = fmt(tokens);
-    $("calc-price").textContent = "£" + fmt(Number(c.dataset.price));
+  btns.forEach((b) => b.addEventListener("click", () => {
+    btns.forEach((x) => { x.classList.remove("active"); x.setAttribute("aria-pressed", "false"); });
+    b.classList.add("active"); b.setAttribute("aria-pressed", "true");
+    tokens = Number(b.dataset.tokens);
+    q(".c-plan").textContent = b.dataset.name;
+    q(".c-tokens").textContent = fmt(tokens);
+    q(".c-price").textContent = "£" + fmt(Number(b.dataset.price));
     render();
   }));
   mix.addEventListener("input", render);
   render();
-})();
+});
