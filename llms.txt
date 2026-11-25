@@ -29,6 +29,7 @@ TalkCX Ltd, company number 17529587, 66 Paul Street, London EC2A 4NA. Contact: i
 
 ## Blog
 
+- [How to choose a Contact Centre AI partner in the UK](https://talkcx.co.uk/blog/choosing-contact-centre-ai-partner-uk.html): Going direct to an AI vendor or working with a partner? An honest guide for UK contact centres on what each route gives you, what it costs and the questions to ask.
 - [Where do your practice's missed calls actually go?](https://talkcx.co.uk/blog/dental-practice-missed-calls.html): Most dental practices know the phones get busy. Fewer know what happens to the calls nobody picks up. A practical look at finding out, and what to do about it.
 - [Seven questions to ask before you buy an AI voice agent](https://talkcx.co.uk/blog/questions-before-buying-ai-voice-agent.html): Every voice AI demo sounds good. These seven questions help you find out how it will cope with your real callers, your systems and your budget.
 - [Running a contact centre with under 25 seats? Here's where AI actually helps](https://talkcx.co.uk/blog/small-contact-centre-voice-ai.html): Small contact centres don't need a big transformation programme. A practical look at the few places a voice AI agent earns its keep, and where it doesn't.
