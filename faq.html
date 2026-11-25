@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Contact Centre AI FAQ: Costs, Setup, PolyAI and GDPR | TalkCX</title>
-<meta name="description" content="Answers to common questions about Contact Centre AI and AI call centres: what it costs, how tokens work, setup and contracts, handing calls to people, PolyAI, and how TalkCX works." />
+<meta name="description" content="Answers to common questions about Contact Centre AI and AI call centres: what it costs, how tokens work, setup and contracts, integrations with phone systems and CRMs, handing calls to people, PolyAI, and how TalkCX works." />
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,6 +86,70 @@
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "Then our assessment says so. Sometimes the better answer is a process or IVR change, and we'll tell you that."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What systems can the AI agent connect to?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking and knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Will it work with our phone system?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Almost certainly. PolyAI works with Genesys Cloud, NICE CXone, Five9, Amazon Connect, Twilio, Zoom, Dialpad and Zendesk Talk, and with any phone system through a standard SIP connection. For smaller sites, you can simply forward calls from your existing number."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can it transfer calls to my team?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. When a call needs a person, the agent transfers it through your phone system and can pass the caller's details along with it, so your team doesn't start from scratch."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can it look up and update customer records?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Connected to your CRM or booking system, the agent can check an account, find or change a booking and log what happened on the call, using the same rules your team follows."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Does it work on webchat, SMS and WhatsApp?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. The same agent can answer on webchat, SMS and WhatsApp, and hand a chat to your team in Salesforce, Zendesk, NICE CXone, Genesys Cloud, Amazon Connect, Five9 or Webex Contact Center."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What if our system isn't on the list?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "If it has an API, we can usually connect it. We check this early in the project, before you commit to a build."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Are the connections secure?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. Calls are encrypted by default, system passwords and keys are stored securely in the platform rather than in the agent itself, and every request the agent makes to your systems is logged so it can be reviewed."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Who sets up the integrations?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "We do. We work with your IT team or phone supplier, so we just need someone who knows your systems and access to set up the connection."
    }
   },
   {
@@ -221,6 +285,20 @@
       <div class="card faq-item"><h3>How do you decide what the AI should hand over to a person?</h3><p>We agree it with you. Complaints, vulnerable callers and anything the AI can't complete safely usually go straight to a person.</p></div>
       <div class="card faq-item"><h3>What is a digital conversation?</h3><p>One conversation with a customer on your website chat, WhatsApp or SMS, however many messages it takes.</p></div>
       <div class="card faq-item"><h3>What if AI isn't right for us?</h3><p>Then our assessment says so. Sometimes the better answer is a process or IVR change, and we'll tell you that.</p></div>
+    </div>
+  </section>
+
+  <section class="container about-section">
+    <div class="section-head"><h2>Integrations</h2></div>
+    <div class="grid grid-2 reveal">
+      <div class="card faq-item"><h3>What systems can the AI agent connect to?</h3><p>Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking and knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping.</p></div>
+      <div class="card faq-item"><h3>Will it work with our phone system?</h3><p>Almost certainly. PolyAI works with Genesys Cloud, NICE CXone, Five9, Amazon Connect, Twilio, Zoom, Dialpad and Zendesk Talk, and with any phone system through a standard SIP connection. For smaller sites, you can simply forward calls from your existing number.</p></div>
+      <div class="card faq-item"><h3>Can it transfer calls to my team?</h3><p>Yes. When a call needs a person, the agent transfers it through your phone system and can pass the caller&#x27;s details along with it, so your team doesn&#x27;t start from scratch.</p></div>
+      <div class="card faq-item"><h3>Can it look up and update customer records?</h3><p>Yes. Connected to your CRM or booking system, the agent can check an account, find or change a booking and log what happened on the call, using the same rules your team follows.</p></div>
+      <div class="card faq-item"><h3>Does it work on webchat, SMS and WhatsApp?</h3><p>Yes. The same agent can answer on webchat, SMS and WhatsApp, and hand a chat to your team in Salesforce, Zendesk, NICE CXone, Genesys Cloud, Amazon Connect, Five9 or Webex Contact Center.</p></div>
+      <div class="card faq-item"><h3>What if our system isn&#x27;t on the list?</h3><p>If it has an API, we can usually connect it. We check this early in the project, before you commit to a build.</p></div>
+      <div class="card faq-item"><h3>Are the connections secure?</h3><p>Yes. Calls are encrypted by default, system passwords and keys are stored securely in the platform rather than in the agent itself, and every request the agent makes to your systems is logged so it can be reviewed.</p></div>
+      <div class="card faq-item"><h3>Who sets up the integrations?</h3><p>We do. We work with your IT team or phone supplier, so we just need someone who knows your systems and access to set up the connection.</p></div>
     </div>
   </section>
 

@@ -37,6 +37,30 @@ A: One conversation with a customer on your website chat, WhatsApp or SMS, howev
 Q: What if AI isn't right for us?
 A: Then our assessment says so. Sometimes the better answer is a process or IVR change, and we'll tell you that.
 
+Q: What systems can the AI agent connect to?
+A: Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking and knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping.
+
+Q: Will it work with our phone system?
+A: Almost certainly. PolyAI works with Genesys Cloud, NICE CXone, Five9, Amazon Connect, Twilio, Zoom, Dialpad and Zendesk Talk, and with any phone system through a standard SIP connection. For smaller sites, you can simply forward calls from your existing number.
+
+Q: Can it transfer calls to my team?
+A: Yes. When a call needs a person, the agent transfers it through your phone system and can pass the caller's details along with it, so your team doesn't start from scratch.
+
+Q: Can it look up and update customer records?
+A: Yes. Connected to your CRM or booking system, the agent can check an account, find or change a booking and log what happened on the call, using the same rules your team follows.
+
+Q: Does it work on webchat, SMS and WhatsApp?
+A: Yes. The same agent can answer on webchat, SMS and WhatsApp, and hand a chat to your team in Salesforce, Zendesk, NICE CXone, Genesys Cloud, Amazon Connect, Five9 or Webex Contact Center.
+
+Q: What if our system isn't on the list?
+A: If it has an API, we can usually connect it. We check this early in the project, before you commit to a build.
+
+Q: Are the connections secure?
+A: Yes. Calls are encrypted by default, system passwords and keys are stored securely in the platform rather than in the agent itself, and every request the agent makes to your systems is logged so it can be reviewed.
+
+Q: Who sets up the integrations?
+A: We do. We work with your IT team or phone supplier, so we just need someone who knows your systems and access to set up the connection.
+
 Q: What is a token?
 A: Tokens are how plans are measured. One token covers 30 seconds of an AI voice call or one digital conversation, so a voice minute uses 2 tokens. Your tokens can go on calls, chat or any mix.
 
