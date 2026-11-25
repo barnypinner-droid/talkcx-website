@@ -146,6 +146,7 @@ RELATED = {
     "questions-before-buying-ai-voice-agent": ["vendor-selection-rfp.html", "ai-readiness-assessment.html", "faq.html", "contact.html"],
     "small-contact-centre-voice-ai": ["ai-readiness-assessment.html", "pricing.html", "faq.html", "contact.html"],
     "talkcx-avant-partnership": ["partners.html", "vendor-selection-rfp.html", "pricing.html", "contact.html"],
+    "choosing-contact-centre-ai-partner-uk": ["polyai-reseller.html", "vendor-selection-rfp.html", "faq.html", "contact.html"],
     "default": ["pricing.html", "ai-readiness-assessment.html", "faq.html", "contact.html"],
 }
 
