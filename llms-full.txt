@@ -1,0 +1,1249 @@
+# TalkCX
+
+> TalkCX is a vendor-neutral Contact Centre AI consultancy and an official PolyAI reseller partner. It helps UK contact centres, call centres and local businesses choose, deploy and run AI voice agents, AI receptionists and digital agents.
+
+TalkCX is built on 25+ years of contact centre experience across five industries, with experience from NiCE, Talkdesk, PolyAI, DigitalGenius and NewVoiceMedia, and clients across banking, travel, retail, telecoms and the public sector. It offers AI readiness assessments, CCaaS vendor selection and RFP support, conversational AI design, deployment assurance, PolyAI resale and delivery, and ongoing support (managed service). Consultancy is £1,100 a day, excluding VAT, with a fixed price agreed before work starts.
+
+Plans are sold in tokens: 1 token = 30 seconds of AI voice or 1 digital conversation (website chat, WhatsApp or SMS). Local business plans are per site per month on 24-month contracts with free setup: Out of Hours £100 (800 tokens a month), In-House £200 (1,600) and Connected £250 (1,800, includes booking system integration). Plans for growing businesses and contact centres run for 3 years: Starter £625 a month (75,000 tokens a year), Growth £1,250 (150,000), Scale £2,500 (300,000), Contact Centre £5,000 (600,000); Enterprise from 1.2 million tokens a year on request. Pay as you go and extra usage is 10p a token (20p a voice minute, 10p a digital conversation). Prices exclude VAT.
+
+TalkCX Ltd, company number 17529587, 66 Paul Street, London EC2A 4NA. Contact: info@talkcx.co.uk. Book a call: https://calendar.app.google/L8kcdCoEQL7EJN2VA
+
+## FAQ
+
+Q: What does TalkCX do?
+A: TalkCX is a vendor-neutral Contact Centre AI consultancy and an official PolyAI reseller partner. We help UK contact centres, call centres and local businesses choose, set up and run AI voice agents, AI receptionists and digital agents, from readiness assessment and vendor selection to go-live and support.
+
+Q: Are you independent if you resell PolyAI?
+A: We tell you up front that we're a PolyAI partner. In a vendor selection we score every vendor against the same criteria you've agreed, and you make the decision.
+
+Q: Which vendors do you cover?
+A: The main CCaaS and conversational AI platforms sold in the UK. We agree the long list with you.
+
+Q: Is there a minimum size?
+A: No. Local packages start at one site.
+
+Q: Which AI does TalkCX use?
+A: Our voice and digital agents run on PolyAI, and TalkCX is an official PolyAI reseller partner. We design, set up and support the agent for you.
+
+Q: Will callers know it's an AI?
+A: Yes. The agent says it's an AI assistant at the start of the call, and callers can ask for a person.
+
+Q: How do you decide what the AI should hand over to a person?
+A: We agree it with you. Complaints, vulnerable callers and anything the AI can't complete safely usually go straight to a person.
+
+Q: What is a digital conversation?
+A: One conversation with a customer on your website chat, WhatsApp or SMS, however many messages it takes.
+
+Q: What if AI isn't right for us?
+A: Then our assessment says so. Sometimes the better answer is a process or IVR change, and we'll tell you that.
+
+Q: What systems can the AI agent connect to?
+A: Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking systems such as OpenTable, healthcare systems such as Epic, knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping.
+
+Q: Will it work with our phone system?
+A: Almost certainly. PolyAI works with Genesys Cloud, NICE CXone, Five9, Amazon Connect, Twilio, Zoom, Dialpad and Zendesk Talk, and with any phone system through a standard SIP connection. For smaller sites, you can simply forward calls from your existing number.
+
+Q: Can it transfer calls to my team?
+A: Yes. When a call needs a person, the agent transfers it through your phone system and can pass the caller's details along with it, so your team doesn't start from scratch.
+
+Q: Can it look up and update customer records?
+A: Yes. Connected to your CRM or booking system, the agent can check an account, find or change a booking and log what happened on the call, using the same rules your team follows.
+
+Q: Does it work on webchat, SMS and WhatsApp?
+A: Yes. The same agent can answer on webchat, SMS and WhatsApp, and hand a chat to your team in Salesforce, Zendesk, NICE CXone, Genesys Cloud, Amazon Connect, Five9 or Webex Contact Center.
+
+Q: What if our system isn't on the list?
+A: If it has an API, we can usually connect it. We check this early in the project, before you commit to a build.
+
+Q: Are the connections secure?
+A: Yes. Calls are encrypted by default, system passwords and keys are stored securely in the platform rather than in the agent itself, and every request the agent makes to your systems is logged so it can be reviewed.
+
+Q: Who sets up the integrations?
+A: We do. We work with your IT team or phone supplier, so we just need someone who knows your systems and access to set up the connection.
+
+Q: What is a token?
+A: Tokens are how plans are measured. One token covers 30 seconds of an AI voice call or one digital conversation, so a voice minute uses 2 tokens. Your tokens can go on calls, chat or any mix.
+
+Q: How much does Contact Centre AI cost?
+A: Local business plans start at £100 a month per site, and plans for growing businesses and contact centres start at £625 a month on a 3-year term. Pay as you go is 10p a token. See the pricing page for every plan. Prices exclude VAT.
+
+Q: What happens if I go over my allowance?
+A: Nothing stops working. Extra usage is charged at 10p a token (20p a voice minute, 10p a digital conversation), billed monthly. If you go over regularly, we'll suggest the next package up.
+
+Q: Is there a contract?
+A: Local plans run for 24 months per site with free setup, like a phone contract. A 12-month contract is available with a £295 setup fee. Plans for growing businesses run for 3 years.
+
+Q: Can I change package?
+A: Yes. You can move up a package at any time. Moving down is possible at the end of each 12 months of your contract.
+
+Q: Do prices include VAT?
+A: No. All prices exclude VAT.
+
+Q: Do we need to have chosen a vendor first?
+A: No. Our AI readiness assessment is vendor-neutral and often happens before you've spoken to anyone.
+
+Q: What do you need from us to get started?
+A: Access to call reports or recordings, an hour or two with a few team members, and someone who knows your systems.
+
+Q: Who supports the agent after launch?
+A: We do. Ongoing support and growth packages are available if you want us to keep improving it.
+
+Q: Can you join a project that's already late?
+A: Yes. We'll start with a quick review of where things stand.
+
+
+## Page: https://talkcx.co.uk/pricing.html
+
+Pricing
+
+### Contact Centre AI, priced like a phone contract.
+
+ A fixed monthly price with a token allowance for calls and digital conversations included. Pick the package that fits, and we set up and run the AI for you.
+
+ Local businesses
+
+### Local business plans: AI call answering for your site
+
+ For dental practices, clinics, salons, trades and other local businesses. Per site, per month, on a 24-month contract with free setup.
+
+### Out of Hours
+
+ £100/month per site
+ The AI answers when you're closed.
+
+- 800 tokens a month: up to 400 voice minutes or 800 digital conversations, in any mix
+
+- Evenings, weekends, bank holidays and lunchtimes
+
+- Takes the caller's details and what they need
+
+- Texts or emails the caller, and sends you a summary
+
+ Book a callFull details →
+
+### In-House
+
+ £200/month per site
+ An AI receptionist working alongside your team.
+
+- 1,600 tokens a month: up to 800 voice minutes or 1,600 digital conversations, in any mix
+
+- Answers any time: overflow when you're busy, plus out of hours
+
+- Answers common questions and routes urgent calls
+
+- Transfers callers to your team when they're free
+
+ Book a callFull details →
+
+### Connected
+
+ £250/month per site
+ Everything in In-House, connected to your booking system.
+
+- 1,800 tokens a month: up to 900 voice minutes or 1,800 digital conversations, in any mix
+
+- Books, moves and cancels appointments in your booking system
+
+- Works with many practice and booking systems (we'll check yours)
+
+- Everything in In-House
+
+ Book a callFull details →
+
+ 1 token= 30 seconds of AI voice
+ 1 token= 1 digital conversation
+ Each plan includes a monthly allowance of tokens. Use them on calls, on website chat, WhatsApp and SMS, or any mix. Pick a plan and move the slider to see what it covers.
+
+ Out of Hours
+ In-House
+ Connected
+
+ PlanIn-House
+ Tokens a month1,600
+ Monthly per site£200
+
+ How you use your tokens: 50% voice, 50% digital
+
+ All digital
+
+ All voice
+
+ voice minutes a month
+
+ digital conversations a month
+
+ Pick a plan and book a 30-minute call. We'll check it fits your business and get you set up.
+
+ Extra usage: 10p a token (20p per voice minute, 10p per digital conversation). 10% off each additional site. 12-month option with a £295 setup fee. Prices exclude VAT.
+
+ Small and medium businesses
+
+### AI call centre plans for growing teams
+
+ For businesses with a phone team or contact centre. Buy a yearly allowance of tokens on a 3-year plan and spend them on AI voice calls, digital conversations or both. Free installation if you sign within 3 months of starting pay as you go.
+
+ 1 token= 30 seconds of AI voice
+ 1 token= 1 digital conversation
+ You buy a yearly allowance of tokens and use them however you like: all on calls, all on chat, or any mix. Move the slider to see what your tokens cover.
+
+ Starter
+ £625/month
+ 75,000 tokens a year
+ Up to 37,500 voice minutes or 75,000 digital conversations
+
+ Growth
+ £1,250/month
+ 150,000 tokens a year
+ Up to 75,000 voice minutes or 150,000 digital conversations
+
+ Scale
+ £2,500/month
+ 300,000 tokens a year
+ Up to 150,000 voice minutes or 300,000 digital conversations
+
+ Contact Centre
+ £5,000/month
+ 600,000 tokens a year
+ Up to 300,000 voice minutes or 600,000 digital conversations
+
+ PlanStarter
+ Tokens a year75,000
+ Monthly£625
+
+ How you use your tokens: 50% voice, 50% digital
+
+ All digital
+
+ All voice
+
+ voice minutes a year
+
+ digital conversations a year
+
+ Enterprise: 1.2 million tokens a year and up. Book a call for a quote.
+
+ Prefer to start small? Pay as you go is 10p a token (20p per voice minute, 10p per digital conversation), with no minimum. Managed service, where we run, tune and report on your AI agents, is available as an extra: see ongoing support. Prices exclude VAT.
+
+ Services
+
+### Contact Centre AI services
+
+ From the first readiness assessment to go-live and beyond. Add any of these to a plan, or book them on their own. Consultancy is £1,100 a day, with a fixed price agreed before we start. Click a service to see what's included.
+
+### AI Readiness Assessment
+
+ From £5,500
+ Current-state review, use-case shortlist and a business case for Contact Centre AI and CCaaS investment.
+
+ 5 TO 10 DAYS
+ Find out more →
+
+### Vendor Selection and RFP
+
+ From £16,500
+ Requirements, shortlist, demos, scoring and negotiation support across the CCaaS and conversational AI market.
+
+ 15 TO 30 DAYS
+ Find out more →
+
+### Conversational AI Design
+
+ From £11,000
+ Call-flow and intent design, containment targets, and clean handoff from AI to human agents.
+
+ 10 TO 20 DAYS
+ Find out more →
+
+### Deployment Assurance
+
+ From £2,200 a month
+ Client-side oversight of your chosen vendor's rollout and go-live, keeping delivery honest and on track.
+
+ RETAINED, 2 TO 4 DAYS A MONTH
+ Find out more →
+
+### PolyAI Reseller and Delivery
+
+ Included in your plan
+ As an official PolyAI reseller partner, we scope, quote and help deliver PolyAI voice AI deployments directly.
+
+ USUALLY WEEKS, NOT MONTHS
+ Find out more →
+
+### Ongoing Support and Growth
+
+ From £1,100 a month
+ Retained support after go-live, plus scoped packages to add new use cases, channels and markets.
+
+ RETAINED, MONTHLY
+ Find out more →
+
+ Every engagement starts with a fixed-price assessment, so you know exactly what you're buying before any larger commitment. Prices exclude VAT.
+
+ Pricing questions
+
+### How Contact Centre AI pricing works
+
+### What is a token?
+Tokens are how plans are measured. One token covers 30 seconds of an AI voice call or one digital conversation, so a voice minute uses 2 tokens. Your tokens can go on calls, chat or any mix.
+
+### What counts as a voice minute?
+Time the AI agent spends on a call, measured in 30-second blocks. A two and a half minute call uses two and a half minutes of your allowance.
+
+### What is a digital conversation?
+One conversation with a customer on your website chat, WhatsApp or SMS, however many messages it takes.
+
+### What happens if I go over my allowance?
+Nothing stops working. Extra usage is charged at 10p a token (20p a voice minute, 10p a digital conversation), billed monthly. If you go over regularly, we'll suggest the next package up.
+
+### Can I change package?
+Yes. You can move up a package at any time. Moving down is possible at the end of each 12 months of your contract.
+
+### Is there a setup fee?
+Setup is free on 24-month local packages and on 3-year plans signed within 3 months of starting pay as you go. A 12-month local contract has a £295 setup fee.
+
+### Which AI does TalkCX use?
+Our voice and digital agents run on PolyAI, and TalkCX is an official PolyAI reseller partner. We design, set up and support the agent for you.
+
+### Do prices include VAT?
+No. All prices exclude VAT.
+
+ More questions about the service itself? See our services above or blog.
+
+### Not sure which package fits?
+
+ Book a free call. We'll look at your call volumes and recommend the right package, with no obligation.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/ai-readiness-assessment.html
+
+Where to start
+
+### Contact Centre AI readiness assessment
+
+ Before you spend money on AI, find out where it will actually help. We look at your calls, your systems and your team, and tell you plainly which use cases are worth automating, which aren't, and what it would cost.
+
+### What's included
+
+- Review of your current call types, volumes and peaks
+
+- Look at your phone system, CRM and booking or case management tools
+
+- Interviews with team leaders and front-line agents
+
+- Shortlist of the use cases best suited to a voice or digital AI agent
+
+- Business case with costs, expected savings and risks
+
+- Recommended next step: pilot, RFP or not yet
+
+### Price and timescale
+
+ From £5,500
+ 5 to 10 days at £1,100 a day, fixed price agreed before we start. Prices exclude VAT.
+
+ Typical timescale: 5 to 10 days
+
+ Who it's for: Contact centres and phone teams being asked about AI call centre technology who want a clear, independent view before talking to vendors.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Discovery
+A kick-off call and access to your call data and reports.
+
+ STEP 2
+### Review
+We listen to calls, talk to your team and map your systems.
+
+ STEP 3
+### Shortlist
+We score each use case on volume, complexity and fit.
+
+ STEP 4
+### Report
+A short written report and a walkthrough with your leadership team.
+
+ Questions
+
+### AI Readiness Assessment: common questions
+
+### Do we need to have chosen a vendor first?
+No. The assessment is vendor-neutral and often happens before you've spoken to anyone.
+
+### What if AI isn't right for us?
+Then the report says so. Sometimes the better answer is a process or IVR change, and we'll tell you that.
+
+### What do you need from us?
+Access to call reports or recordings, an hour or two with a few team members, and someone who knows your systems.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/vendor-selection-rfp.html
+
+Choose the right platform
+
+### CCaaS and Contact Centre AI vendor selection
+
+ The contact centre and AI market is crowded and every demo looks good. We help you write down what you need, run a fair process and negotiate a contract you won't regret.
+
+### What's included
+
+- Requirements gathered from your team, IT and leadership
+
+- Long list and shortlist of CCaaS and conversational AI vendors
+
+- RFP document and question set
+
+- Scripted demos so vendors are compared like for like
+
+- Scoring model and recommendation
+
+- Commercial and contract negotiation support
+
+### Price and timescale
+
+ From £16,500
+ 15 to 30 days at £1,100 a day, scoped after an initial call. Prices exclude VAT.
+
+ Typical timescale: 15 to 30 days
+
+ Who it's for: Businesses replacing a phone system or contact centre platform, or adding conversational AI, who want a structured and fair choice.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Requirements
+Workshops to agree what you need and what matters most.
+
+ STEP 2
+### Market
+We build a long list and narrow it to a shortlist.
+
+ STEP 3
+### RFP and demos
+We run the RFP and scripted demos with your team.
+
+ STEP 4
+### Decision
+Scoring, a recommendation and help negotiating the contract.
+
+ Questions
+
+### Vendor Selection and RFP: common questions
+
+### Are you independent if you resell PolyAI?
+We tell you up front that we're a PolyAI partner. In a vendor selection we score every vendor against the same criteria you've agreed, and you make the decision.
+
+### Can you help with just the contract?
+Yes. Negotiation support can be booked on its own.
+
+### Which vendors do you cover?
+The main CCaaS and conversational AI platforms sold in the UK. We agree the long list with you.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/conversational-ai-design.html
+
+Design it properly
+
+### Conversational AI design for Contact Centre AI
+
+ Most AI agents that disappoint were designed badly, not built badly. We design the conversations, the edge cases and the handoff to your team, so callers get an answer and your agents get the context.
+
+### What's included
+
+- Call-flow and conversation design for each use case
+
+- Intent list and the questions callers really ask
+
+- Containment targets you can measure
+
+- Rules for when and how to hand over to a person
+
+- Integration design for your CRM, booking or case system
+
+- Test scripts for go-live
+
+### Price and timescale
+
+ From £11,000
+ 10 to 20 days at £1,100 a day, depending on the number of use cases. Prices exclude VAT.
+
+ Typical timescale: 10 to 20 days
+
+ Who it's for: Contact centre teams about to build or rebuild an AI call centre agent, voice or digital, on PolyAI or another platform.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Listen
+We listen to real calls to learn how your callers talk.
+
+ STEP 2
+### Design
+Call flows, intents and handoff rules, agreed with your team.
+
+ STEP 3
+### Prototype
+We test the design with real scenarios before build.
+
+ STEP 4
+### Handover
+A design pack your vendor or our team can build from.
+
+ Questions
+
+### Conversational AI Design: common questions
+
+### Is design included in the plans?
+Designing the agent we set up for you is part of setup on our plans. Design for extra use cases, or for another platform, is priced separately.
+
+### Do you only design for PolyAI?
+No. We can design for any platform and hand the design to your vendor.
+
+### How do you decide what the AI should hand over?
+We agree it with you. Complaints, vulnerable callers and anything the AI can't complete safely usually go straight to a person.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/deployment-assurance.html
+
+Keep delivery on track
+
+### Deployment assurance for Contact Centre AI projects
+
+ Once the contract is signed, the vendor runs the project. We sit on your side of the table, checking progress, testing what's delivered and making sure go-live happens when it should.
+
+### What's included
+
+- Attendance at project and steering meetings
+
+- Plan, risk and issue reviews
+
+- Testing what's delivered against what was agreed
+
+- Go-live readiness checks
+
+- Escalation support when things slip
+
+- Monthly status summary for your leadership
+
+### Price and timescale
+
+ From £2,200 a month
+ 2 to 4 days a month at £1,100 a day, for the length of the project. Prices exclude VAT.
+
+ Typical timescale: Retained, 2 to 4 days a month
+
+ Who it's for: Businesses with a CCaaS or AI call centre project underway who want an experienced person checking the vendor's work.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Baseline
+We review the contract, plan and design.
+
+ STEP 2
+### Oversight
+Regular check-ins with you and the vendor.
+
+ STEP 3
+### Test
+We test key journeys before go-live.
+
+ STEP 4
+### Go-live
+Support through launch and the first weeks after.
+
+ Questions
+
+### Deployment Assurance: common questions
+
+### Do you work with our vendor or for them?
+For you. We're paid by you and report to you.
+
+### Can you join a project that's already late?
+Yes. We'll start with a quick review of where things stand.
+
+### How long does it usually run?
+For the length of the build and the first few weeks after go-live.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/polyai-reseller.html
+
+Official PolyAI partner
+
+### UK PolyAI reseller and delivery partner
+
+ PolyAI builds some of the most natural-sounding voice AI agents available. As an official reseller partner, we scope, quote and deliver PolyAI for UK businesses, and support it after go-live.
+
+### What's included
+
+- Scoping and a fixed quote
+
+- Your PolyAI agent set up and configured
+
+- Connections to your phone system and booking or CRM tools
+
+- Testing with real scenarios before go-live
+
+- Usage billed through your TalkCX plan
+
+- Support from a UK partner after launch
+
+### Price and timescale
+
+ Included in your plan
+ Setup is included in the local packages and in 3-year plans signed within 3 months of pay as you go. Prices exclude VAT.
+
+ Typical timescale: Agreed when we scope your agent
+
+ Who it's for: Contact centres wanting AI call centre agents, and local businesses wanting an AI receptionist, who want PolyAI without managing the project themselves.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Scope
+We agree the use cases and what the agent connects to.
+
+ STEP 2
+### Build
+We set up and configure your agent.
+
+ STEP 3
+### Test
+We test with your team before any customers hear it.
+
+ STEP 4
+### Launch
+Go live, then we tune it in the first weeks.
+
+ Questions
+
+### PolyAI Reseller and Delivery: common questions
+
+### Why buy PolyAI through TalkCX?
+You get a UK partner who handles setup, connections and support, and plans that fit smaller budgets.
+
+### Is there a minimum size?
+No. Local packages start at one site.
+
+### Who supports the agent after launch?
+We do. Ongoing support and growth packages are available if you want us to keep improving it.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/ongoing-support.html
+
+After go-live
+
+### Ongoing support and growth for your Contact Centre AI
+
+ An AI agent gets better when someone looks after it. We review conversations, fix what isn't working, report on results and add new use cases when you're ready.
+
+### What's included
+
+- Regular review of calls and conversations
+
+- Tuning of answers, flows and handoff rules
+
+- Monthly report on volumes, containment and issues
+
+- A named contact for changes
+
+- Scoped packages for new use cases, channels or markets
+
+- Quarterly review with your leadership
+
+### Price and timescale
+
+ From £1,100 a month
+ From 1 day a month at £1,100 a day. New use cases are scoped separately. Prices exclude VAT.
+
+ Typical timescale: Retained, monthly
+
+ Who it's for: Businesses with a live AI call centre agent who want it monitored and improved without hiring someone to do it.
+
+ See all plans and optional services
+
+ How it works
+
+### Four steps
+
+ STEP 1
+### Monitor
+We review conversations and performance each month.
+
+ STEP 2
+### Tune
+We fix gaps and improve answers.
+
+ STEP 3
+### Report
+A monthly summary of what changed and why.
+
+ STEP 4
+### Grow
+New use cases and channels, scoped when you're ready.
+
+ Questions
+
+### Ongoing Support and Growth: common questions
+
+### Is this the same as managed service?
+Yes. It's our managed service for AI agents.
+
+### Can we cancel?
+The term is agreed when we scope your package.
+
+### Do we need it?
+Not always. Some teams look after their agent themselves after go-live; we'll give you the handover to do that.
+
+ See all our services, pricing or read the blog.
+
+### Talk it through first
+
+ Book a free call and we'll tell you honestly whether this is the right starting point.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/out-of-hours-ai-call-answering.html
+
+Local business plan
+
+### Out of Hours AI call answering
+
+ Never send an evening or weekend caller to voicemail again. When you're closed, an AI receptionist answers, finds out what the caller needs, takes their details and sends you a summary, ready for the morning.
+
+### What it does
+
+- Answers every call when you're closed: evenings, weekends, bank holidays and lunchtimes
+
+- Finds out what the caller needs and takes their name and number
+
+- Texts or emails the caller to confirm you'll be in touch
+
+- Sends you a summary of every call
+
+- Answers website chat, WhatsApp or SMS messages out of hours
+
+- Uses your opening times and your own greeting
+
+ It doesn't answer during opening hours or book appointments. For that, see In-House or Connected.
+
+### Out of Hours
+
+ £100/month per site
+
+- 800 tokens a month: up to 400 voice minutes or 800 digital conversations, in any mix
+
+- 24-month contract, free setup
+
+- Extra use: 10p a token (20p a voice minute, 10p a conversation)
+
+- 10% off each additional site
+
+ Book a call
+
+ Prices exclude VAT. Who it's for: Dental practices, clinics, salons, trades and other local businesses that miss calls when the doors are shut.
+
+ Compare packages
+
+### Choose your local business plan
+
+ All three include an AI receptionist for calls and digital messages. Move up a package at any time.
+
+### Out of Hours
+
+ £100 a month per site
+ 800 tokens a month: up to 400 voice minutes or 800 digital conversations
+
+ YOU ARE HERE →
+
+### In-House
+
+ £200 a month per site
+ 1,600 tokens a month: up to 800 voice minutes or 1,600 digital conversations
+
+ VIEW →
+
+### Connected
+
+ £250 a month per site
+ 1,800 tokens a month: up to 900 voice minutes or 1,800 digital conversations
+
+ VIEW →
+
+ Running a contact centre or a bigger team? See our AI call centre plans for growing businesses.
+
+ Questions
+
+### Out of Hours: common questions
+
+### Is there a contract?
+Yes, 24 months per site with free setup, like a phone contract. A 12-month contract is available with a £295 setup fee.
+
+### What if I use more than my allowance?
+It keeps working. Extra use is 10p a token (20p per voice minute, 10p per digital conversation), billed monthly. If it happens often, we'll suggest a bigger package.
+
+### Can I change package later?
+Yes. You can move up a package at any time.
+
+### Will callers know it's an AI?
+Yes. The agent says it's an AI assistant at the start of the call, and callers can ask for a person.
+
+### Which AI is it?
+It runs on PolyAI. TalkCX is an official PolyAI reseller partner and sets it up and supports it for you.
+
+### Do prices include VAT?
+No. All prices exclude VAT.
+
+### Not sure which package fits?
+
+ Book a free call and we'll look at how many calls you get and when, then recommend the right package.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/in-house-ai-receptionist.html
+
+Local business plan
+
+### In-House AI receptionist
+
+ An AI receptionist that works alongside your team, all day. When the phones are busy it picks up the calls your team can't get to, answers common questions and passes urgent calls straight through. When you're closed, it covers everything.
+
+### What it does
+
+- Everything in Out of Hours
+
+- Answers overflow calls during opening hours when your team is busy
+
+- Answers common questions: opening times, prices, directions, what to bring
+
+- Routes urgent calls to the right person
+
+- Transfers callers to your team when someone is free
+
+- Handles website chat, WhatsApp or SMS at any time
+
+ It takes booking requests but doesn't put them in your diary. To book, move and cancel appointments automatically, see Connected.
+
+### In-House
+
+ £200/month per site
+
+- 1,600 tokens a month: up to 800 voice minutes or 1,600 digital conversations, in any mix
+
+- 24-month contract, free setup
+
+- Extra use: 10p a token (20p a voice minute, 10p a conversation)
+
+- 10% off each additional site
+
+ Book a call
+
+ Prices exclude VAT. Who it's for: Local businesses whose front desk is stretched at busy times and who want every call answered, day and night.
+
+ Compare packages
+
+### Choose your local business plan
+
+ All three include an AI receptionist for calls and digital messages. Move up a package at any time.
+
+### Out of Hours
+
+ £100 a month per site
+ 800 tokens a month: up to 400 voice minutes or 800 digital conversations
+
+ VIEW →
+
+### In-House
+
+ £200 a month per site
+ 1,600 tokens a month: up to 800 voice minutes or 1,600 digital conversations
+
+ YOU ARE HERE →
+
+### Connected
+
+ £250 a month per site
+ 1,800 tokens a month: up to 900 voice minutes or 1,800 digital conversations
+
+ VIEW →
+
+ Running a contact centre or a bigger team? See our AI call centre plans for growing businesses.
+
+ Questions
+
+### In-House: common questions
+
+### Is there a contract?
+Yes, 24 months per site with free setup, like a phone contract. A 12-month contract is available with a £295 setup fee.
+
+### What if I use more than my allowance?
+It keeps working. Extra use is 10p a token (20p per voice minute, 10p per digital conversation), billed monthly. If it happens often, we'll suggest a bigger package.
+
+### Can I change package later?
+Yes. You can move up a package at any time.
+
+### Will callers know it's an AI?
+Yes. The agent says it's an AI assistant at the start of the call, and callers can ask for a person.
+
+### Which AI is it?
+It runs on PolyAI. TalkCX is an official PolyAI reseller partner and sets it up and supports it for you.
+
+### Do prices include VAT?
+No. All prices exclude VAT.
+
+### Not sure which package fits?
+
+ Book a free call and we'll look at how many calls you get and when, then recommend the right package.
+
+ Book a call
+
+## Page: https://talkcx.co.uk/connected-ai-booking-agent.html
+
+Local business plan
+
+### Connected AI receptionist with booking
+
+ Everything in In-House, connected to your booking system. Callers can book, move or cancel an appointment with the AI at any time of day, and it goes straight into your diary without your team lifting a finger.
+
+### What it does
+
+- Everything in In-House
+
+- Books new appointments straight into your booking system
+
+- Moves and cancels appointments, and offers the next free slot
+
+- Checks the caller's details against your records where the system allows
+
+- Sends a confirmation by text or email
+
+- We check that your booking system can connect before you sign
+
+ The connection depends on your booking system allowing it. We check this before you sign, at no cost.
+
+### Connected
+
+ £250/month per site
+
+- 1,800 tokens a month: up to 900 voice minutes or 1,800 digital conversations, in any mix
+
+- 24-month contract, free setup
+
+- Extra use: 10p a token (20p a voice minute, 10p a conversation)
+
+- 10% off each additional site
+
+ Book a call
+
+ Prices exclude VAT. Who it's for: Practices, clinics and service businesses that take a lot of booking calls and use an online booking or practice management system.
+
+ Compare packages
+
+### Choose your local business plan
+
+ All three include an AI receptionist for calls and digital messages. Move up a package at any time.
+
+### Out of Hours
+
+ £100 a month per site
+ 800 tokens a month: up to 400 voice minutes or 800 digital conversations
+
+ VIEW →
+
+### In-House
+
+ £200 a month per site
+ 1,600 tokens a month: up to 800 voice minutes or 1,600 digital conversations
+
+ VIEW →
+
+### Connected
+
+ £250 a month per site
+ 1,800 tokens a month: up to 900 voice minutes or 1,800 digital conversations
+
+ YOU ARE HERE →
+
+ Running a contact centre or a bigger team? See our AI call centre plans for growing businesses.
+
+ Questions
+
+### Connected: common questions
+
+### Is there a contract?
+Yes, 24 months per site with free setup, like a phone contract. A 12-month contract is available with a £295 setup fee.
+
+### What if I use more than my allowance?
+It keeps working. Extra use is 10p a token (20p per voice minute, 10p per digital conversation), billed monthly. If it happens often, we'll suggest a bigger package.
+
+### Can I change package later?
+Yes. You can move up a package at any time.
+
+### Will callers know it's an AI?
+Yes. The agent says it's an AI assistant at the start of the call, and callers can ask for a person.
+
+### Which AI is it?
+It runs on PolyAI. TalkCX is an official PolyAI reseller partner and sets it up and supports it for you.
+
+### Do prices include VAT?
+No. All prices exclude VAT.
+
+### Not sure which package fits?
+
+ Book a free call and we'll look at how many calls you get and when, then recommend the right package.
+
+ Book a call
+
+## Blog: Where do your practice's missed calls actually go?
+https://talkcx.co.uk/blog/dental-practice-missed-calls.html (2026-11-23)
+
+Ask any practice manager about the phones and you'll hear the same thing. Monday mornings are chaos, lunchtimes are worse, and the moment a patient is standing at the desk, the phone starts ringing.
+
+ Most practices know the phones get busy. Far fewer know what happens to the calls nobody picks up. That's the bit worth looking at, because those calls don't just disappear.
+
+### Where a missed call goes
+
+ When a patient rings and doesn't get through, they do one of a few things:
+
+- They ring back later. Fine, but it adds to the next busy spell.
+
+- They leave a voicemail. Someone now has to listen to it, call back, and often play phone tag.
+
+- They give up for now. The check-up gets pushed back, or forgotten.
+
+- They ring the practice down the road. For a new patient, this is usually what happens.
+
+ Existing patients tend to be patient. New patients, and anyone in pain, aren't. They're calling the next number on the list, and the first practice to answer gets the booking.
+
+### Find out your own number first
+
+ Before you spend anything, get a rough picture of what's happening now. Your phone system almost certainly records it. Ask whoever supplies it for a report showing, for the last four weeks:
+
+- Total inbound calls
+
+- Calls answered, and calls abandoned or sent to voicemail
+
+- The same, broken down by hour of the day
+
+ The hourly view is the useful one. In most practices the missed calls bunch up in a few predictable windows: first thing, lunchtime, and the end of the day. That tells you whether you have a staffing problem across the whole day, or a capacity problem for a few hours a week.
+
+### What the calls are actually about
+
+ The next question is what people are ringing for. Sit with reception for a morning, or ask them to tally calls for a week. You'll usually find a big share are routine:
+
+- Booking, moving or cancelling an appointment
+
+- Opening hours, parking, directions
+
+- "Are you taking new NHS patients?"
+
+- Prices for common treatments
+
+ These are important calls, but they don't need your most experienced person. The calls that do need a human are the anxious patient, the complicated treatment question, the complaint.
+
+### Your options
+
+ There's no single right answer. The realistic choices are:
+
+- Change the rota. If the misses are concentrated in two or three windows, an extra pair of hands at those times may fix most of it.
+
+- Online booking. Helpful for patients who'd rather not call, though plenty still pick up the phone.
+
+- An outsourced answering service. Someone answers, but usually takes a message rather than booking anything.
+
+- An AI voice agent. It answers every call immediately, handles the routine ones end to end, and passes anything that needs a person to your team with the details already taken.
+
+ On that last one, a fair word of caution. A good voice agent sounds natural, understands accents and people changing their mind mid-sentence, and knows when to hand over. A poor one is a phone menu with a nicer voice, and patients can tell. If you look at this route, ask to hear it handle a real, messy call, not a scripted demo.
+
+### Where to start
+
+ Pull the call report. If the missed calls are a handful a week, you probably don't need us. If they're a steady stream at the times you're busiest, it's worth a proper look at what they're costing you and what would fix it.
+
+ Either way, you'll know, rather than guess. And if you'd like a second pair of eyes on the numbers, we're happy to help.
+
+## Blog: Seven questions to ask before you buy an AI voice agent
+https://talkcx.co.uk/blog/questions-before-buying-ai-voice-agent.html (2026-11-23)
+
+Every AI voice agent demo sounds impressive. The voice is natural, the answers are quick, and the scripted caller always says exactly the right thing. Real callers don't.
+
+ Having spent a long time on the buying and selling side of contact centre technology, these are the questions I'd want answered before signing anything.
+
+### 1. Can I hear it handle a messy call?
+
+ Ask to hear real calls, or test it yourself, and make it hard. Interrupt it. Change your mind halfway through. Give a postcode with a strong accent, on a bad mobile line, with a dog barking. Ask something it wasn't set up for. A good agent copes, or admits it can't help and passes you on. A poor one loops, guesses or keeps you stuck.
+
+### 2. What happens when it can't help?
+
+ This matters more than almost anything else. Ask how a call gets to a person, how quickly, and what information goes with it. If your team picks up and has to ask the caller to start again, you've added a step, not removed one. Also ask what happens out of hours, when there's nobody to hand over to.
+
+### 3. Will it work with our systems?
+
+ An AI that can only answer questions is useful. One that can actually book the appointment, update the record or check the order is far more useful. Ask which of your systems it connects to, whether that's already built or needs custom work, and who pays for and maintains that connection. Ask about your phone system too: how calls reach the AI, and whether you need to change provider.
+
+### 4. Who builds it, and who looks after it?
+
+ Your opening times change. Your prices change. You launch a new service. Someone has to update the agent each time. Find out whether that's you, the vendor or a partner, how long changes take, and what they cost. Ask how you'll see what the AI is doing: call recordings, transcripts, and reports on what it handled and what it passed on.
+
+### 5. How is it priced, really?
+
+ Most platforms charge for usage, often per minute or per conversation, plus setup. Get the full picture: setup and build, integration work, the usage rate, any minimum commitment, and what changes cost later. Then model it against your own call volumes, including your busiest month, not an average.
+
+### 6. Where does the data go, and how do we get out?
+
+ Your callers will give it names, dates of birth, addresses and sometimes health or payment details. Ask where calls and transcripts are stored, for how long, who can access them, and whether a proper data processing agreement is in place under UK GDPR. And ask what happens at the end: the notice period, and whether you can take your call data and configuration with you.
+
+### 7. Does it tell you how to improve?
+
+ No agent knows everything on day one. Callers will ask things nobody thought to set it up for, and the best agents get better because they learn from those gaps. Ask whether it flags the questions it couldn't answer, the calls it had to pass on and the points where callers got confused or gave up. Then ask whether it turns that into clear recommendations: a missing answer to add, a policy to clarify, a new task it could take on. A good agent tells you where it's falling short. A poor one quietly fails the same callers in the same way, month after month, and you only find out from complaints.
+
+### The short version
+
+ Don't judge on the demo. Judge on how it handles your hardest calls, how cleanly it hands over to your team, whether it keeps getting better, and what it will really cost to run for a year.
+
+ If it would help to have someone in your corner who knows the vendors and asks these questions for a living, that's a big part of what we do.
+
+## Blog: Running a contact centre with under 25 seats? Here's where AI actually helps
+https://talkcx.co.uk/blog/small-contact-centre-voice-ai.html (2026-11-23)
+
+Most of what's written about AI in contact centres is aimed at operations with hundreds or thousands of agents. If you run a team of 10 or 20, a lot of it doesn't apply. You don't have a transformation budget, a data science team or six months to run a pilot.
+
+ What you do have is a small team that gets stretched at the same points every week. That's where AI can help, and it's a much smaller, simpler job than the big case studies suggest.
+
+### The problem with being small
+
+ A small team has very little slack. One person off sick, a busy Monday morning or a problem that sends everyone to the phones at once, and queue times jump. You can't easily staff for the peaks, because you'd be paying people to sit idle the rest of the week.
+
+ Meanwhile, a good chunk of what your agents handle is the same handful of questions, asked over and over. Order status, appointment changes, opening times, "has my payment gone through?". Necessary, but not the best use of someone you trained for weeks.
+
+### Where a voice agent earns its keep
+
+- Peaks. An AI agent answers every call straight away, however many come in at once. It takes the routine calls, so your people are free for the ones that need them.
+
+- Out of hours. Evening and weekend callers get an answer, and often a resolution, instead of a voicemail you'll be clearing on Monday.
+
+- The repetitive stuff. Calls that follow a clear pattern and can be completed with a lookup in your systems are the best fit. Booking, rescheduling, status checks, simple account changes.
+
+- Taking the details first. Even when a call needs a person, the AI can identify the caller and find out what they need, then pass all of that across. Your agent picks up knowing what the call is about.
+
+### Where it doesn't
+
+ It's worth being just as clear about this.
+
+- Complaints and upset customers. Someone who's already frustrated wants a person. Route them to one quickly.
+
+- Complex, one-off problems. If your agents have to investigate, use judgement or negotiate, keep those calls with them.
+
+- Processes that only live in people's heads. If nobody has written down how a task is done, an AI can't do it either. Sometimes the useful first step is simply documenting the process.
+
+### Start small
+
+ You don't need to automate everything at once. The approach that works for small teams is to pick one or two call types that are high in volume and simple to complete, put the AI on those, and watch how it goes. Keep a clear route to a person on every call. Expand once you've seen it work with your own customers.
+
+ Before you speak to any vendor, it's worth pulling a month of call data from your phone system: volumes by hour, and a rough split of what people are calling about. That tells you very quickly whether there's a real case, and which calls to start with.
+
+### A word on cost
+
+ Most voice AI is priced on usage, by the minute or by the conversation, plus a setup cost. For a small team, that can work well, because you pay for what's handled rather than for seats. But look at the whole picture: setup, connecting to your systems, ongoing changes and support, not just the per-minute rate.
+
+ If you'd like a second opinion on whether your call mix is a good fit, we're happy to take a look. If it isn't, we'll tell you.
+
+## Blog: TalkCX has partnered with Avant. Why that means there's always a solution
+https://talkcx.co.uk/blog/talkcx-avant-partnership.html (2026-11-23)
+
+I'm pleased to say TalkCX is now a Trusted Advisor with Avant Communications, a leading technology services distributor.
+
+ The short version: Avant works with a very large number of technology partners. That means whatever problem you bring to us, there's always a solution we can put in front of you.
+
+### One problem, lots of possible answers
+
+ Every business I speak to has a slightly different problem. A dental group missing calls at lunchtime. A contact centre stuck on an ageing phone system. A team that wants AI to take routine calls but needs it to work with the systems they already have.
+
+ No single vendor is the right answer for all of those. When an adviser only has one or two products to offer, the temptation is to make every problem fit them. That's not how I want to work.
+
+### What Avant brings
+
+ Avant has built partnerships with suppliers across the whole technology stack, including:
+
+- Customer experience and contact centre platforms
+
+- Conversational and voice AI
+
+- Phone systems and unified communications
+
+- Connectivity, cloud and security
+
+ Because Avant already works with so many partners, I can compare options side by side and find the one that genuinely fits your business, your budget and the systems you already run. And if your problem crosses several of those areas, as most do, I can bring the right pieces together.
+
+### What it means for you
+
+- There's always a solution. With so many partners to draw on, you're not limited to what one vendor happens to make.
+
+- Advice based on fit. I recommend what suits you, not what I happen to sell.
+
+- Specialist backup. Avant gives me access to supplier specialists and engineering support for the more technical projects.
+
+- One point of contact. You deal with me from the first conversation through to go-live, however many suppliers are involved.
+
+### What doesn't change
+
+ Every engagement still starts with understanding your calls, your customers and your team. I'll tell you honestly what will help and what won't. Having so many options just means the answer is far more likely to be the right one.
+
+ If you're reviewing your contact centre or phone setup, looking at AI, or have a contract renewal coming up, I'd be happy to talk it through.

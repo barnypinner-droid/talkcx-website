@@ -1,0 +1,38 @@
+# TalkCX
+
+> TalkCX is a vendor-neutral Contact Centre AI consultancy and an official PolyAI reseller partner. It helps UK contact centres, call centres and local businesses choose, deploy and run AI voice agents, AI receptionists and digital agents.
+
+TalkCX is built on 25+ years of contact centre experience across five industries, with experience from NiCE, Talkdesk, PolyAI, DigitalGenius and NewVoiceMedia, and clients across banking, travel, retail, telecoms and the public sector. It offers AI readiness assessments, CCaaS vendor selection and RFP support, conversational AI design, deployment assurance, PolyAI resale and delivery, and ongoing support (managed service). Consultancy is £1,100 a day, excluding VAT, with a fixed price agreed before work starts.
+
+Plans are sold in tokens: 1 token = 30 seconds of AI voice or 1 digital conversation (website chat, WhatsApp or SMS). Local business plans are per site per month on 24-month contracts with free setup: Out of Hours £100 (800 tokens a month), In-House £200 (1,600) and Connected £250 (1,800, includes booking system integration). Plans for growing businesses and contact centres run for 3 years: Starter £625 a month (75,000 tokens a year), Growth £1,250 (150,000), Scale £2,500 (300,000), Contact Centre £5,000 (600,000); Enterprise from 1.2 million tokens a year on request. Pay as you go and extra usage is 10p a token (20p a voice minute, 10p a digital conversation). Prices exclude VAT.
+
+TalkCX Ltd, company number 17529587, 66 Paul Street, London EC2A 4NA. Contact: info@talkcx.co.uk. Book a call: https://calendar.app.google/L8kcdCoEQL7EJN2VA
+
+## Pages
+
+- [Home](https://talkcx.co.uk/): Overview of TalkCX, Contact Centre AI consultancy for UK contact centres.
+- [About](https://talkcx.co.uk/about.html): Background, track record and values.
+- [Pricing](https://talkcx.co.uk/pricing.html): Contact Centre AI pricing: local business plans, 3-year plans for growing businesses and contact centres, a token calculator, and the six services with prices.
+- [FAQ](https://talkcx.co.uk/faq.html): Answers on cost, tokens, contracts, handing calls to people, PolyAI and how TalkCX works.
+- [Out of Hours plan](https://talkcx.co.uk/out-of-hours-ai-call-answering.html): AI call answering when you're closed, £100 a month per site.
+- [In-House plan](https://talkcx.co.uk/in-house-ai-receptionist.html): AI receptionist working alongside your team, £200 a month per site.
+- [Connected plan](https://talkcx.co.uk/connected-ai-booking-agent.html): AI booking agent connected to your booking system, £250 a month per site.
+- [AI Readiness Assessment](https://talkcx.co.uk/ai-readiness-assessment.html): From £5,500; 5 to 10 days.
+- [Vendor Selection and RFP](https://talkcx.co.uk/vendor-selection-rfp.html): From £16,500; 15 to 30 days.
+- [Conversational AI Design](https://talkcx.co.uk/conversational-ai-design.html): From £11,000; 10 to 20 days.
+- [Deployment Assurance](https://talkcx.co.uk/deployment-assurance.html): From £2,200 a month; retained, 2 to 4 days a month.
+- [PolyAI Reseller and Delivery](https://talkcx.co.uk/polyai-reseller.html): Included in your plan.
+- [Ongoing Support and Growth](https://talkcx.co.uk/ongoing-support.html): Managed service, from £1,100 a month.
+- [Insights](https://talkcx.co.uk/insights.html): Industry research on Contact Centre AI and conversational AI in customer service, with sources.
+- [Partners](https://talkcx.co.uk/partners.html): PolyAI, Avant Communications and Casey Business Solution.
+- [Contact](https://talkcx.co.uk/contact.html): How to get in touch or book a free call.
+
+## Blog
+
+{POSTS}
+
+## Optional
+
+- [Full text for AI assistants](https://talkcx.co.uk/llms-full.txt): FAQ answers, service details and every blog post in plain text.
+- [Privacy Policy](https://talkcx.co.uk/privacy.html): How TalkCX collects, uses and protects personal data.
+- [Terms of Use](https://talkcx.co.uk/terms.html): The terms that apply to using the website.
