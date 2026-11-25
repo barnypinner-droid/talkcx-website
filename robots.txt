@@ -3,6 +3,7 @@ Allow: /
 Disallow: /content/
 Disallow: /tools/
 Disallow: /demos/
+Disallow: /r/
 
 # AI search and assistant crawlers: welcome
 User-agent: GPTBot
