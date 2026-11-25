@@ -60,7 +60,7 @@ def head(title, description, canonical, extra=""):
         <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../pricing.html">Pricing</a></li>
-        <li><a href="../vendor-selection-rfp.html">RFP</a></li>
+        <li><a href="../faq.html">FAQ</a></li>
         <li><a href="../insights.html">Insights</a></li>
         <li><a href="./" class="active">Blog</a></li>
         <li><a href="../partners.html">Partners</a></li>
