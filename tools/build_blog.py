@@ -42,7 +42,8 @@ def head(title, description, canonical, extra=""):
 <meta property="og:url" content="{canonical}" />
 <meta property="og:image" content="{SITE}/assets/img/talkcx-logo.png" />
 <meta name="twitter:card" content="summary" />
-<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="../assets/img/favicon.png" type="image/png" />
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png" />
 <link rel="alternate" type="application/rss+xml" title="TalkCX Blog" href="{SITE}/blog/feed.xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +55,7 @@ def head(title, description, canonical, extra=""):
 
 <header class="site-header">
   <div class="container nav-wrap">
-    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
+    <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="888" height="243" /></a>
     <nav class="primary-nav">
       <ul>
         <li><a href="../index.html">Home</a></li>
@@ -81,7 +82,7 @@ FOOT = f"""
   <div class="container">
     <div class="footer-grid">
       <div>
-        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="444" height="136" /></a>
+        <a href="../index.html" class="logo"><img src="../assets/img/talkcx-logo.png" alt="TalkCX" class="logo-img" width="888" height="243" /></a>
         <p style="margin-top:14px;max-width:320px;">Vendor-neutral contact centre AI consultancy. Official PolyAI reseller partner for the UK mid-market.</p>
       </div>
       <div>

@@ -168,12 +168,12 @@ header.site-header {
   align-items: center;
 }
 .logo-img {
-  height: 102px;
+  height: 90px;
   width: auto;
   display: block;
   animation: neon-flicker 5s 1;
 }
-.footer-grid .logo-img { height: 90px; }
+.footer-grid .logo-img { height: 80px; }
 
 /* Irregular on/off dips rather than a smooth pulse, to read as a real
    imperfect neon tube rather than a soft breathing animation. */
@@ -657,7 +657,7 @@ a.service-link:hover h3 { color: var(--neon-blue); }
 
 /* ---------- Header CTA ---------- */
 .header-cta { padding: 10px 20px; font-size: 0.9rem; white-space: nowrap; }
-@media (min-width: 861px) and (max-width: 1180px) { nav.primary-nav ul { gap: 22px; } .logo-img { height: 84px; } }
+@media (min-width: 861px) and (max-width: 1180px) { nav.primary-nav ul { gap: 22px; } .logo-img { height: 72px; } }
 
 /* ---------- About page ---------- */
 .about-section { padding: 40px 24px; }
