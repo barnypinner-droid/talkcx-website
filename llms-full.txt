@@ -38,7 +38,7 @@ Q: What if AI isn't right for us?
 A: Then our assessment says so. Sometimes the better answer is a process or IVR change, and we'll tell you that.
 
 Q: What systems can the AI agent connect to?
-A: Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking and knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping.
+A: Our agents run on PolyAI, which connects to phone systems, CRMs such as Salesforce, HubSpot, Microsoft Dynamics 365 and Zendesk, booking systems such as OpenTable, healthcare systems such as Epic, knowledge tools, and any other system with an API. We confirm exactly what your agent will connect to during scoping.
 
 Q: Will it work with our phone system?
 A: Almost certainly. PolyAI works with Genesys Cloud, NICE CXone, Five9, Amazon Connect, Twilio, Zoom, Dialpad and Zendesk Talk, and with any phone system through a standard SIP connection. For smaller sites, you can simply forward calls from your existing number.
