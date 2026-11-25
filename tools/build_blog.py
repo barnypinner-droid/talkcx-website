@@ -23,7 +23,7 @@ import datetime, html, json, pathlib, re
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://talkcx.co.uk"
 BOOK = "https://calendar.app.google/L8kcdCoEQL7EJN2VA"
-STATIC_PAGES = ["", "about.html", "pricing.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
+STATIC_PAGES = ["", "about.html", "pricing.html", "faq.html", "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html", "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html", "insights.html", "partners.html",
                 "contact.html", "privacy.html", "terms.html"]  # msa/dpa stay unlisted
 
 def head(title, description, canonical, extra=""):
@@ -89,6 +89,7 @@ FOOT = f"""
           <li><a href="../about.html">About</a></li>
           <li><a href="../pricing.html#services">Services</a></li>
           <li><a href="../pricing.html">Pricing</a></li>
+          <li><a href="../faq.html">FAQ</a></li>
           <li><a href="../insights.html">Insights</a></li>
           <li><a href="./">Blog</a></li>
           <li><a href="../partners.html">Partners</a></li>
@@ -121,6 +122,40 @@ CTA = f"""
       <h2>Want the honest read on your own phones?</h2>
       <p>A 30-minute call, no obligation. We'll tell you where AI would genuinely help, and where it wouldn't.</p>
       <a href="{BOOK}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Book a call</a>
+    </div>
+  </section>
+"""
+
+# Internal links shown under each post (SEO task 13). Keys are post slugs; "default" covers new posts.
+PAGE_LINKS = {
+    "pricing.html": "Contact Centre AI pricing and plans",
+    "faq.html": "Contact Centre AI FAQ",
+    "ai-readiness-assessment.html": "AI Readiness Assessment",
+    "vendor-selection-rfp.html": "Vendor Selection and RFP",
+    "conversational-ai-design.html": "Conversational AI Design",
+    "out-of-hours-ai-call-answering.html": "Out of Hours AI call answering",
+    "in-house-ai-receptionist.html": "In-House AI receptionist",
+    "connected-ai-booking-agent.html": "Connected AI booking agent",
+    "polyai-reseller.html": "PolyAI Reseller and Delivery",
+    "partners.html": "Our partners",
+    "contact.html": "Contact us",
+}
+RELATED = {
+    "dental-practice-missed-calls": ["out-of-hours-ai-call-answering.html", "connected-ai-booking-agent.html", "pricing.html", "contact.html"],
+    "questions-before-buying-ai-voice-agent": ["vendor-selection-rfp.html", "ai-readiness-assessment.html", "faq.html", "contact.html"],
+    "small-contact-centre-voice-ai": ["ai-readiness-assessment.html", "pricing.html", "faq.html", "contact.html"],
+    "talkcx-avant-partnership": ["partners.html", "vendor-selection-rfp.html", "pricing.html", "contact.html"],
+    "default": ["pricing.html", "ai-readiness-assessment.html", "faq.html", "contact.html"],
+}
+
+def related_block(slug):
+    links = RELATED.get(slug, RELATED["default"])
+    items = "".join(f'<li><a href="../{u}">{PAGE_LINKS[u]} &rarr;</a></li>' for u in links)
+    return f"""
+  <section class="container blog-section">
+    <div class="card post-related">
+      <h2>Useful next steps</h2>
+      <ul>{items}</ul>
     </div>
   </section>
 """
@@ -172,7 +207,7 @@ def build_post(p):
 {p['body']}
     </article>
   </section>
-{CTA}</main>
+{related_block(p['slug'])}{CTA}</main>
 {FOOT}"""
     (ROOT / "blog" / f"{p['slug']}.html").write_text(page)
 
@@ -235,6 +270,38 @@ def build_sitemap(posts):
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
 
+def _text(html_str):
+    import html as _h
+    t = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", html_str, flags=re.S)
+    t = re.sub(r"<h[1-4][^>]*>(.*?)</h[1-4]>", lambda m: "\n### " + re.sub(r"<[^>]+>", "", m.group(1)) + "\n", t, flags=re.S)
+    t = re.sub(r"<li[^>]*>", "\n- ", t)
+    t = re.sub(r"</p>|<br\s*/?>", "\n", t)
+    t = re.sub(r"<[^>]+>", "", t)
+    t = _h.unescape(t)
+    t = re.sub(r"[ \t]+", " ", t)
+    return re.sub(r"\n\s*\n+", "\n\n", t).strip()
+
+def build_llms(posts):
+    """llms.txt from content/llms.md, plus llms-full.txt with FAQ, page text and every post."""
+    tmpl = (ROOT / "content/llms.md").read_text()
+    lines = "\n".join(f"- [{p['title']}]({SITE}/blog/{p['slug']}.html): {p['description']}" for p in posts)
+    short = tmpl.replace("{POSTS}", lines)
+    (ROOT / "llms.txt").write_text(short)
+    parts = [short.split("## Pages")[0].strip(), "\n## FAQ\n"]
+    faq = (ROOT / "faq.html").read_text()
+    for q, a in re.findall(r'<div class="card faq-item"><h3>(.*?)</h3><p>(.*?)</p></div>', faq):
+        parts.append(f"Q: {_text(q)}\nA: {_text(a)}\n")
+    for page in ["pricing.html", "ai-readiness-assessment.html", "vendor-selection-rfp.html", "conversational-ai-design.html",
+                 "deployment-assurance.html", "polyai-reseller.html", "ongoing-support.html",
+                 "out-of-hours-ai-call-answering.html", "in-house-ai-receptionist.html", "connected-ai-booking-agent.html"]:
+        src = (ROOT / page).read_text()
+        m = re.search(r"<main>(.*?)</main>", src, re.S)
+        if m:
+            parts.append(f"\n## Page: {SITE}/{page}\n\n" + _text(m.group(1)))
+    for p in posts:
+        parts.append(f"\n## Blog: {p['title']}\n{SITE}/blog/{p['slug']}.html ({p['date'].isoformat()})\n\n" + _text(p["body"]))
+    (ROOT / "llms-full.txt").write_text("\n".join(parts).strip() + "\n")
+
 if __name__ == "__main__":
     posts = load_posts()
     for p in posts:
@@ -242,4 +309,5 @@ if __name__ == "__main__":
     build_index(posts)
     build_feed(posts)
     build_sitemap(posts)
+    build_llms(posts)
     print(f"Built {len(posts)} post(s): " + ", ".join(p["slug"] for p in posts))

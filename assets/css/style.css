@@ -690,3 +690,8 @@ a.service-link:hover h3 { color: var(--neon-blue); }
 a.service-card.service-link { display: flex; flex-direction: column; }
 a.service-card.service-link .tag { align-self: flex-start; }
 a.service-card.service-link:hover .svc-more { text-decoration: underline; }
+.post-related { max-width: 860px; margin: 0 auto; }
+.post-related h2 { font-size: 1.3rem; margin-bottom: 12px; }
+.post-related ul { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px; }
+.post-related a { color: var(--neon-blue); font-weight: 600; }
+@media (max-width: 640px) { .post-related ul { grid-template-columns: 1fr; } }
