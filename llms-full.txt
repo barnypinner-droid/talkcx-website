@@ -1052,6 +1052,63 @@ No. All prices exclude VAT.
 
  Book a call
 
+## Blog: Christmas peak: how Contact Centre AI covers the calls you can't staff
+https://talkcx.co.uk/blog/christmas-peak-contact-centre-ai.html (2026-11-26)
+
+For most UK contact centres, the run-up to Christmas is the busiest stretch of the year. Orders, deliveries, returns, bookings and "where's my parcel?" calls all arrive at once. Contact Centre AI won't replace your team over peak, but it can take a big share of the routine calls off them, so the people you have can focus on the calls that really need them.
+
+ If you run a small team, here's a practical look at where AI helps during peak, and where it doesn't.
+
+### Why peak is hard for small contact centres
+
+ Large operations can hire seasonal staff months in advance and train them up. A team of 10 or 20 usually can't. Temporary agents take weeks to become useful, many leave once the rush is over, and every hour your best people spend training them is an hour they're not on the phones.
+
+ So most small teams stretch. Longer queues, more abandoned calls, more voicemails to clear in January, and a tired team by the time Christmas arrives.
+
+### Where Contact Centre AI helps over peak
+
+- Answering every call straight away. An AI voice agent doesn't queue callers, however many ring at once.
+
+- Handling the repeat questions. Order status, delivery dates, opening hours, returns policy, appointment changes. These calls follow a pattern, and many can be completed end to end with a lookup in your systems.
+
+- Covering evenings and weekends. Customers ring when it suits them. AI call answering out of hours means they get an answer, not a voicemail.
+
+- Taking the details before a handover. When a call does need a person, the AI agent can find out who's calling and why, then pass that across so your agent doesn't start from scratch.
+
+### Where your people still matter most
+
+ Peak is also when customers are most stressed. A missing present, a cancelled delivery, a refund that hasn't arrived. Those calls need a person who can listen, use judgement and fix the problem. A good AI call centre setup gets those callers to a human quickly instead of trying to handle everything itself.
+
+ The aim isn't fewer people. It's your people spending peak on the calls that need them, not on the fortieth "what time do you close?" of the day.
+
+### Is it too late for this Christmas?
+
+ For a full rollout, probably. A well-built AI voice agent needs time to design, connect to your systems and test with real callers. Rushing it in a fortnight before your busiest week is a risk most teams shouldn't take.
+
+ But there are two useful things you can do now:
+
+- Measure this peak properly. Pull your call volumes by hour and day, your abandoned call rate, and a rough split of what people are calling about. That's the business case for next year, written for you.
+
+- Pick one or two call types to start with. High volume, simple to complete, and low risk if something goes wrong. That's where you'd begin in the new year, well ahead of the next peak.
+
+### Where to start
+
+ If you'd like a second pair of eyes on your peak numbers, or want to understand what a sensible first step would look like, have a look at our services or get in touch. We'll tell you honestly whether AI is worth it for your contact centre, and where it isn't.
+
+### FAQ
+
+### What is Contact Centre AI?
+
+ It's AI that handles or supports customer conversations in a contact centre. For phone calls, that usually means an AI voice agent that answers calls, understands what the caller wants and completes routine tasks or hands over to a person.
+
+### Will an AI call centre agent replace my seasonal staff?
+
+ Not entirely. It can take a large share of routine calls, which reduces how much extra cover you need. You'll still want people for complex, sensitive and upset callers.
+
+### How long does it take to set up?
+
+ It depends on how many call types you start with and which systems it needs to connect to. Plan for weeks, not days, and allow time to test with real callers before your busy season.
+
 ## Blog: How to choose a Contact Centre AI partner in the UK
 https://talkcx.co.uk/blog/choosing-contact-centre-ai-partner-uk.html (2026-11-25)
 
